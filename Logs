@@ -1,0 +1,231 @@
+Stack <> adress[0x7ffe6608f790] "stk" at stackCtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        0
+data [(nil)]
+---------------------------------------------------------------------------------
+
+
+Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 19.Adress 0x7ffe6608f790 with adrsss of data: 0x55736bdd2490
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackCtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =       32
+data [0x55736bdd2490]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+*data[4] = DEAD
+*data[5] = DEAD
+*data[6] = DEAD
+*data[7] = DEAD
+*data[8] = DEAD
+*data[9] = DEAD
+*data[10] = DEAD
+*data[11] = DEAD
+*data[12] = DEAD
+*data[13] = DEAD
+*data[14] = DEAD
+*data[15] = DEAD
+*data[16] = DEAD
+*data[17] = DEAD
+*data[18] = DEAD
+*data[19] = DEAD
+*data[20] = DEAD
+*data[21] = DEAD
+*data[22] = DEAD
+*data[23] = DEAD
+*data[24] = DEAD
+*data[25] = DEAD
+*data[26] = DEAD
+*data[27] = DEAD
+*data[28] = DEAD
+*data[29] = DEAD
+*data[30] = DEAD
+*data[31] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =       32
+data [0x55736bdd2490]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+*data[4] = DEAD
+*data[5] = DEAD
+*data[6] = DEAD
+*data[7] = DEAD
+*data[8] = DEAD
+*data[9] = DEAD
+*data[10] = DEAD
+*data[11] = DEAD
+*data[12] = DEAD
+*data[13] = DEAD
+*data[14] = DEAD
+*data[15] = DEAD
+*data[16] = DEAD
+*data[17] = DEAD
+*data[18] = DEAD
+*data[19] = DEAD
+*data[20] = DEAD
+*data[21] = DEAD
+*data[22] = DEAD
+*data[23] = DEAD
+*data[24] = DEAD
+*data[25] = DEAD
+*data[26] = DEAD
+*data[27] = DEAD
+*data[28] = DEAD
+*data[29] = DEAD
+*data[30] = DEAD
+*data[31] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            1
+stack capacity =       32
+data [0x55736bdd2490]
+*data[0] = 2
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+*data[4] = DEAD
+*data[5] = DEAD
+*data[6] = DEAD
+*data[7] = DEAD
+*data[8] = DEAD
+*data[9] = DEAD
+*data[10] = DEAD
+*data[11] = DEAD
+*data[12] = DEAD
+*data[13] = DEAD
+*data[14] = DEAD
+*data[15] = DEAD
+*data[16] = DEAD
+*data[17] = DEAD
+*data[18] = DEAD
+*data[19] = DEAD
+*data[20] = DEAD
+*data[21] = DEAD
+*data[22] = DEAD
+*data[23] = DEAD
+*data[24] = DEAD
+*data[25] = DEAD
+*data[26] = DEAD
+*data[27] = DEAD
+*data[28] = DEAD
+*data[29] = DEAD
+*data[30] = DEAD
+*data[31] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackResize
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =       32
+data [0x55736bdd2490]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+*data[4] = DEAD
+*data[5] = DEAD
+*data[6] = DEAD
+*data[7] = DEAD
+*data[8] = DEAD
+*data[9] = DEAD
+*data[10] = DEAD
+*data[11] = DEAD
+*data[12] = DEAD
+*data[13] = DEAD
+*data[14] = DEAD
+*data[15] = DEAD
+*data[16] = DEAD
+*data[17] = DEAD
+*data[18] = DEAD
+*data[19] = DEAD
+*data[20] = DEAD
+*data[21] = DEAD
+*data[22] = DEAD
+*data[23] = DEAD
+*data[24] = DEAD
+*data[25] = DEAD
+*data[26] = DEAD
+*data[27] = DEAD
+*data[28] = DEAD
+*data[29] = DEAD
+*data[30] = DEAD
+*data[31] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackResize
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =       16
+data [0x55736bdd2490]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+*data[4] = DEAD
+*data[5] = DEAD
+*data[6] = DEAD
+*data[7] = DEAD
+*data[8] = DEAD
+*data[9] = DEAD
+*data[10] = DEAD
+*data[11] = DEAD
+*data[12] = DEAD
+*data[13] = DEAD
+*data[14] = DEAD
+*data[15] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackResize
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        8
+data [0x55736bdd2490]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+*data[4] = DEAD
+*data[5] = DEAD
+*data[6] = DEAD
+*data[7] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffe6608f790] "stk" at stackDtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        4
+data [0x55736bdd2490]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+---------------------------------------------------------------------------------
+
+
