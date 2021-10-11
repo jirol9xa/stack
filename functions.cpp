@@ -20,7 +20,6 @@ int stackCtor(Stack* stk, int capacity)
     #if DEBUG_LVL > 1
         void* temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity + 2 * sizeof(u_int64_t));
         if (temp_ptr == nullptr) {
-            fprintf(logs, "%s failed, not enough memory for safety stack\n", __func__);
             return ERR_REALLOC_FAILED;
         }
     
@@ -56,6 +55,7 @@ int stackDtor(Stack* stk)
     #if DEBUG_LVL > 0
         CHECK_PTR(stk)
         STACK_DUMP(stk)
+        ASSERT_OK(stk)
     #endif
 
     stk->capacity = 0;
@@ -72,9 +72,10 @@ int stackPush(Stack* stk, type value)
     #if DEBUG_LVL > 0
         CHECK_PTR(stk)
         STACK_DUMP(stk)
+        ASSERT_OK(stk)
     #endif
 
-    if (stk->size + 1> stk->capacity) {
+    if (stk->size + 1 > stk->capacity) {
         if (stackResize(stk, 1) == ERR_RESIZE_FAILED) {
             fprintf(logs, "Error in %s on %d line: not enough memory for stack\n\n\n", __FUNCTION__, __LINE__);
 
@@ -85,7 +86,7 @@ int stackPush(Stack* stk, type value)
     stk->size ++;
 
     #if DEBUG_LVL > 1
-        memcpy((char*) stk->data + sizeof(type) + (stk->size - 1) * sizeof(type), &value, sizeof(type));
+        memcpy((char*) stk->data + sizeof(u_int64_t) + (stk->size - 1) * sizeof(type), &value, sizeof(type));
         if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_PUSH_FAILED;
     #else
         stk->data[stk->size - 1] = value;
@@ -100,6 +101,7 @@ static int stackResize(Stack* stk, int upper)
     #if DEBUG_LVL > 0
         CHECK_PTR(stk)
         STACK_DUMP(stk)
+        ASSERT_OK(stk)
     #endif
 
     if (upper) {
@@ -108,14 +110,15 @@ static int stackResize(Stack* stk, int upper)
             stk->capacity = 1;
             
             #if DEBUG_LVL > 1
-                    temp_ptr = realloc(stk->data, sizeof(type) + sizeof(u_int64_t));
+                    temp_ptr = realloc(stk->data, sizeof(type) * 1 + sizeof(u_int64_t) * 2);
             #else
                     temp_ptr = realloc(stk->data, sizeof(type) * 1);
             #endif
             if (temp_ptr != nullptr) {
                 #if DEBUG_LVL > 1
+                stk->data = (type*) temp_ptr;
                     memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
-                    memcpy((char*) stk->data + 8 + stk->capacity * sizeof(type),
+                    memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type),
                     &(stk->egg), sizeof(u_int64_t));   
                     for (int i = stk->size; i < stk->capacity; i++) {
                         *((type*) ((char*) stk->data + 8 + i * sizeof(type))) = POISON;
@@ -146,12 +149,14 @@ static int stackResize(Stack* stk, int upper)
 
         if (temp_ptr != nullptr) {
             stk->capacity *= 2;
+            stk->data = (type*) temp_ptr;
+
             #if DEBUG_LVL > 1
-                printf("HEY\n");
                 for (int i = stk->size; i < stk->capacity; i++) {
                     *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
                 }
-                memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type), &(stk->egg), sizeof(u_int64_t)); 
+                memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type), 
+                &(stk->egg), sizeof(u_int64_t)); 
                 if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR;
             #else
                 for (int i = stk->size; i < stk->capacity; i++) {
@@ -175,13 +180,13 @@ static int stackResize(Stack* stk, int upper)
     }
     else {
         #if DEBUG_LVL > 1
-            realloc(stk->data, sizeof(type) * (stk->capacity / 2) + 16);
+            realloc(stk->data, sizeof(type) * (stk->capacity / 2) + 2 * sizeof(u_int64_t));
 
             memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
-            memcpy((char*) stk->data + 8 + (stk->capacity / 2) * sizeof(type), 
+            memcpy((char*) stk->data + sizeof(u_int64_t) + (stk->capacity / 2) * sizeof(type), 
             &(stk->egg), sizeof(u_int64_t));
             for (int i = stk->size; i < stk->capacity / 2; i++) {
-                *((type*) ((char*) stk->data + 8 + i * sizeof(type))) = POISON;
+                *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
             }
             hashCalc(stk);
             
@@ -197,15 +202,20 @@ static int stackResize(Stack* stk, int upper)
 
 
 int stackPop(Stack* stk, type* param)
-{
+{   
+    if (stk->size <= 0) {
+        return ERR_POP_EMPTY_STACK;
+    }
+    
     #if DEBUG_LVL > 0
         STACK_DUMP(stk)
+        ASSERT_OK(stk)
     #endif
+
     
     #if DEBUG_LVL > 1
         stk->size--;
         memcpy(param, (char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type), sizeof(type));
-        printf("%d\n", *param);
         *((type*) ((char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type))) = POISON;
     #else
         memcpy(param, &(stk->data[--stk->size]), sizeof(type));
@@ -227,7 +237,6 @@ int stackPop(Stack* stk, type* param)
     #if DEBUG_LVL > 0
         STACK_DUMP(stk)
     #endif
-
     return 0;
 }
 
@@ -236,32 +245,39 @@ int stackPop(Stack* stk, type* param)
     void verifyStack(Stack* stk){
 
         #if DEBUG_LVL > 1
+            PRINT_LINE()
             if (stk->hash != hashCalc(stk)) {
                 stk->status |= ERR_WRONG_HASH;
             }
         #endif
-        if (stk->data == (type*) 0xBEBE) {                                                              
+        if (stk->data == (type*) 0xBEBE) {
+            PRINT_LINE()                                                              
             stk->status |= ERR_STACK_ALREADY_CLEANED;                   
         }                                                                                                 
-        if (stk->size > stk->capacity) {                                                              
+        if (stk->size > stk->capacity) {  
+            PRINT_LINE()                                                            
             stk->status |= ERR_SIZE_GREATER_CAPACITY;                       
         }
         #if DEBUG_LVL > 1 
             if (stk->egg != (0xFEE1DEAD^((u_int64_t) stk))) {
+                PRINT_LINE()
                 stk->status |= ERR_LEFT_CANARY_DAMAGED;
             }
             if (stk->chicken != (0xFEE1DEAD^((u_int64_t) stk))) {
+                PRINT_LINE()
                 stk->status |= ERR_RIGHT_CANARY_DAMAGED;
             }
             if ( (*((u_int64_t*) stk->data)) != (0xFEE1DEAD^((u_int64_t) stk))){
+                PRINT_LINE()
                 stk->status |= ERR_LEFT_DATACANARY_DAMAGED;
             }
             if ( (*((u_int64_t*) ((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type)))) != (0xFEE1DEAD^((u_int64_t) stk))) {
+                PRINT_LINE()
                 stk->status |= ERR_RIGHT_DATACANARY_DAMAGED;
             }
         
             for (int i = stk->size; i < stk->capacity; i++) {
-                if ( *((type*) ((char*) stk->data + 8 + i * sizeof(type))) != POISON){
+                if ( *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) != POISON){
                     stk->status |= ERR_EMPTY_ELEM_ISNT_POISONED;
                 }
             }   
@@ -289,11 +305,12 @@ int stackPop(Stack* stk, type* param)
         else {
             #if DEBUG_LVL > 1
                 for (int i = 0; i < stk->size; i++){
-                    fprintf(logs, "*data[%d] = %d\n", i, *((type*) ((char*) stk->data + 8 + i * sizeof(type))));
+                    fprintf(logs, "*data[%d] = %d\n", i, *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))));
                 }
                 for (int i = stk->size; i < stk->capacity; i++){
-                    fprintf(logs, "*data[%d] = %X\n", i, *((type*) ((char*) stk->data + 8 + i * sizeof(type))));
+                    fprintf(logs, "*data[%d] = %X\n", i, *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))));
                 }
+                
             #else
                 for (int i = 0; i < stk->size; i++){
                     fprintf(logs, "*data[%d] = %d\n", i, stk->data[i]);
@@ -363,7 +380,7 @@ static int memcpy(void* destination, void* sourse, int element_size)
         CHECK_PTR(stk)
 
         stk->hash = 0;
-        stk->hash = MurmurHash2((char*) stk, sizeof(Stack)) + MurmurHash2((char*) stk->data, 16 + stk->capacity * sizeof(type));
+        stk->hash = MurmurHash2((char*) stk, sizeof(Stack)) + MurmurHash2((char*) stk->data, 2 * sizeof(u_int64_t) + stk->capacity * sizeof(type));
 
         return stk->hash;
     }

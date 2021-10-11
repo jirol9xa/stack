@@ -1,2 +1,2 @@
 all:
-	g++ main.cpp functions.cpp -o stack -w
+	g++ main.cpp functions.cpp -o stack 

@@ -1,170 +1,128 @@
-Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 46.Adress 0x7ffc68f19f50 with adrsss of data: 0x5647588fa480
+Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 45.Adress 0x7fff20725010 with adrsss of data: 0x55d263806480
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackCtor
+Stack <> adress[0x7fff20725010] "stk" at stackCtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        4
+data [0x55d263806480]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 45.Adress 0x7fff20725040 with adrsss of data: 0x55d2638078d0
+
+
+Stack <> adress[0x7fff20725040] "stk" at stackCtor
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        0
-data [0x5647588fa480]
+data [0x55d2638078d0]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPush
+Stack <> adress[0x7fff20725010] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        4
+data [0x55d263806480]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7fff20725040] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        0
-data [0x5647588fa480]
+data [0x55d2638078d0]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackResize
+Stack <> adress[0x7fff20725040] "stk" at stackResize
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        0
-data [0x5647588fa480]
+data [0x55d2638078d0]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackResize
+Stack <> adress[0x7fff20725040] "stk" at stackResize
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        1
-data [0x5647588fa480]
+data [0x55d2638078d0]
 *data[0] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPush
+Stack <> adress[0x7fff20725040] "stk" at stackPop
 ---------------------------------------------------------------------------------
-STATUS =           BROKEN
+STATUS =               OK
 stack size =            1
 stack capacity =        1
-data [0x5647588fa480]
-ERR_LEFT_DATACANARY_DAMAGED 
+data [0x55d2638078d0]
+*data[0] = 9
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackResize
+Stack <> adress[0x7fff20725040] "stk" at stackPop
 ---------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            1
+STATUS =               OK
+stack size =            0
 stack capacity =        1
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
+data [0x55d2638078d0]
+*data[0] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackResize
+Stack <> adress[0x7fff20725010] "stk" at stackPop
 ---------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            1
-stack capacity =        2
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPush
----------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            2
-stack capacity =        2
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackResize
----------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            2
-stack capacity =        2
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackResize
----------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            2
-stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPop
----------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            3
-stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPop
----------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            2
-stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPop
----------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            2
-stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPop
----------------------------------------------------------------------------------
-STATUS =           BROKEN
+STATUS =               OK
 stack size =            1
 stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
+data [0x55d263806480]
+*data[0] = 8
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPop
+Stack <> adress[0x7fff20725010] "stk" at stackPop
 ---------------------------------------------------------------------------------
-STATUS =           BROKEN
-stack size =            1
-stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffc68f19f50] "stk" at stackPop
----------------------------------------------------------------------------------
-STATUS =           BROKEN
+STATUS =               OK
 stack size =            0
 stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
+data [0x55d263806480]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffc68f19f50] "stk" at stackDtor
+Stack <> adress[0x7fff20725010] "stk" at stackDtor
 ---------------------------------------------------------------------------------
-STATUS =           BROKEN
+STATUS =               OK
 stack size =            0
 stack capacity =        4
-data [0x5647588fa480]
-ERR_WRONG_HASH ERR_LEFT_DATACANARY_DAMAGED 
+data [0x55d263806480]
+*data[0] = DEAD
+*data[1] = DEAD
+*data[2] = DEAD
+*data[3] = DEAD
 ---------------------------------------------------------------------------------
 
 

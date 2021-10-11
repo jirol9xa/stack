@@ -27,7 +27,8 @@ const type POISON = 0xDEAD;
                 ERR_RIGHT_DATACANARY_DAMAGED   =    1 << 13,
                 ERR_RESIZE_FAILED              =    1 << 14,
                 ERR_POP_FAILED                 =    1 << 15,
-                ERR_DUMP_FAILED                =    1 << 16
+                ERR_DUMP_FAILED                =    1 << 16,
+                ERR_STACK_BROKEN               =    1 << 17
                 };
 
 
@@ -52,22 +53,30 @@ const type POISON = 0xDEAD;
         }                                                                                                 \
     }
 
+    #define ASSERT_OK(stack) {                                                                            \
+        if (stack->status) return ERR_STACK_BROKEN;                                                       \
+    }
+
 
     #define FUNC_REPORT(func, stack) {                                                                    \
-            int status = (int) func;                                                                      \
+        int status = (int) func;                                                                          \
         if (status) {                                                                                     \
+            PRINT_LINE()                                                                                  \
             fprintf(logs, "########################################################################\n"    \
-            "function \"%s\" was failed with error code:\n", status);                                     \
+            "function \"%s\" was failed with error code:\n", #func);                                      \
+            PRINT_LINE()                                                                                  \
             printError(status);                                                                           \
-            fprintf(logs, "Stack is:\n");                                                                 \
+            fprintf(logs, "\nStack is:\n");                                                               \
+            PRINT_LINE()                                                                                  \
             STACK_DUMP(stack)                                                                             \
+            PRINT_LINE()                                                                                  \
             fprintf(logs, "########################################################################\n");  \
             return ERR_CALLING_FUNC_FAILED;                                                               \
         }                                                                                                 \
     }
 
 
-    #define PRINT_LINE() /*printf("[%s : %s : %d]\n", __FILE__, __func__, __LINE__)*/;
+    #define PRINT_LINE() printf("[%s : %s : %d]\n", __FILE__, __func__, __LINE__);
 #endif
  
  #if DEBUG_LVL <= 0
