@@ -4,41 +4,43 @@ extern FILE* logs;
 static int capacity_calc(int elements_amount);
 static int stackResize(Stack* stk, int upper);
 static int memcpy(void* destination, void* sourse, int element_size);
-static int hashCalc(Stack* stk);
+static unsigned int hashCalc(Stack* stk);
 static unsigned int MurmurHash2(char* key, unsigned int len);
 
 
 int stackCtor(Stack* stk, int capacity) 
-{
+{   
     #if  DEBUG_LVL > 0
         CHECK_PTR(stk)
-        STACK_DUMP(stk)
-    #endif
-
-    stk->data = (type*) calloc ( 1 , sizeof(type) * (int) pow(2, (int) (log(capacity) / log(2)) + 1 ));
-
-    #if DEBUG_LVL > 1
-        void* temp_ptr = realloc(stk->data, sizeof(type) * (int) pow(2, (int) (log(capacity) / log(2)) + 1 ) + 24);
-        if (temp_ptr != nullptr) {
-            stk->data = (int*) temp_ptr;
-        }
-        else {
-            fprintf(logs, "%s failed, not enough memory for safety stack\n", __func__);
-            return 1;
-        }
-    
-        stk->egg     = 0xFEE1DEAD^((int64_t) stk);
-        stk->chicken = 0xFEE1DEAD^((int64_t) stk);
-        memcpy(stk->data, &(stk->egg), sizeof(int64_t));
-        memcpy((char*) stk->data + 8 + stk->capacity, &(stk->egg), sizeof(int64_t));
-        stk->hash = hashCalc(stk);
     #endif
 
     stk->capacity = (int) pow(2, (int) (log(capacity) / log(2)) + 1 );
+    stk->data = (type*) calloc (1 , sizeof(type) * stk->capacity);
 
-    for (int i = 0; i < stk->capacity; i++) {
-        stk->data[i] = POISON;
-    }
+    #if DEBUG_LVL > 1
+        void* temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity + 2 * sizeof(u_int64_t));
+        if (temp_ptr == nullptr) {
+            fprintf(logs, "%s failed, not enough memory for safety stack\n", __func__);
+            return ERR_REALLOC_FAILED;
+        }
+    
+        stk->egg     = 0xFEE1DEAD^((u_int64_t) stk);
+        stk->chicken = 0xFEE1DEAD^((u_int64_t) stk);
+        memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
+        memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type), &(stk->egg), sizeof(u_int64_t));
+    #endif
+
+    #if DEBUG_LVL > 1
+        for (int i = 0; i < stk->capacity; i++) {
+            *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
+        }
+
+        if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR;
+    #else
+        for (int i = 0; i < stk->capacity; i++) {
+            stk->data[i] = POISON;
+        }
+    #endif
 
     #if DEBUG_LVL > 0
         STACK_CREATION_INFO(stk)
@@ -61,7 +63,6 @@ int stackDtor(Stack* stk)
 
     free(stk->data);
     stk->data = (type*) 0xBEBE;
-    stk->hash = hashCalc(stk);
     return 0;
 }
 
@@ -73,21 +74,22 @@ int stackPush(Stack* stk, type value)
         STACK_DUMP(stk)
     #endif
 
-    if (stk->size + 1 > stk->capacity) {
-        if (stackResize(stk, 1) == 1) {
+    if (stk->size + 1> stk->capacity) {
+        if (stackResize(stk, 1) == ERR_RESIZE_FAILED) {
             fprintf(logs, "Error in %s on %d line: not enough memory for stack\n\n\n", __FUNCTION__, __LINE__);
 
-            #if DEBUG_LVL > 0
-                FUNC_REPORT(ERR_PUSH_FAILED,stk)
-            #endif
-
-            return 1;
+            return ERR_PUSH_FAILED;
         }
     }
-    stk->size ++;
-    stk->data[stk->size - 1] = value;
 
-    if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR;
+    stk->size ++;
+
+    #if DEBUG_LVL > 1
+        memcpy((char*) stk->data + sizeof(type) + (stk->size - 1) * sizeof(type), &value, sizeof(type));
+        if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_PUSH_FAILED;
+    #else
+        stk->data[stk->size - 1] = value;
+    #endif
 
     return 0;
 }
@@ -99,49 +101,96 @@ static int stackResize(Stack* stk, int upper)
         CHECK_PTR(stk)
         STACK_DUMP(stk)
     #endif
+
     if (upper) {
         void* temp_ptr = nullptr;
         if (stk->capacity == 0) {
             stk->capacity = 1;
             
-            temp_ptr = realloc(stk->data, sizeof(type) * 1);
+            #if DEBUG_LVL > 1
+                    temp_ptr = realloc(stk->data, sizeof(type) + sizeof(u_int64_t));
+            #else
+                    temp_ptr = realloc(stk->data, sizeof(type) * 1);
+            #endif
             if (temp_ptr != nullptr) {
-                for (int i = stk->size; i < stk->capacity; i++) {
-                    stk->data[i] = POISON;
-                }
-
+                #if DEBUG_LVL > 1
+                    memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
+                    memcpy((char*) stk->data + 8 + stk->capacity * sizeof(type),
+                    &(stk->egg), sizeof(u_int64_t));   
+                    for (int i = stk->size; i < stk->capacity; i++) {
+                        *((type*) ((char*) stk->data + 8 + i * sizeof(type))) = POISON;
+                    }
+                    hashCalc(stk);
+                #else
+                    for (int i = stk->size; i < stk->capacity; i++) {
+                        stk->data[i] = POISON;
+                    }
+                #endif
+                STACK_DUMP(stk)
                 return 0;
             }
             else {
 
             #if DEBUG_LVL > 0
-                FUNC_REPORT(ERR_REALLOC_FAILED,stk)
+                STACK_DUMP(stk);
             #endif 
-
-            return 1;
+            
+            return ERR_RESIZE_FAILED;
             }
         }
-        temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity * 2);
+        #if DEBUG_LVL > 1
+            temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity * 2 + 2 * sizeof(u_int64_t));
+        #else
+            temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity * 2);
+        #endif
+
         if (temp_ptr != nullptr) {
             stk->capacity *= 2;
-            for (int i = stk->size; i < stk->capacity; i++) {
-                    stk->data[i] = POISON;
-            }
+            #if DEBUG_LVL > 1
+                printf("HEY\n");
+                for (int i = stk->size; i < stk->capacity; i++) {
+                    *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
+                }
+                memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type), &(stk->egg), sizeof(u_int64_t)); 
+                if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR;
+            #else
+                for (int i = stk->size; i < stk->capacity; i++) {
+                        stk->data[i] = POISON;
+                }
+            #endif
+
+            #if DEBUG_LVL > 0
+                STACK_DUMP(stk)
+            #endif
 
             return 0;
         }
         else {
-
             #if DEBUG_LVL > 0
-                FUNC_REPORT(ERR_REALLOC_FAILED, stk)
-            #endif 
+                STACK_DUMP(stk)
+            #endif
             
-            return 1;
+            return ERR_RESIZE_FAILED;
         }
     }
     else {
-        realloc(stk->data, sizeof(type) * (stk->capacity / 2));
-        stk->capacity /=2;
+        #if DEBUG_LVL > 1
+            realloc(stk->data, sizeof(type) * (stk->capacity / 2) + 16);
+
+            memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
+            memcpy((char*) stk->data + 8 + (stk->capacity / 2) * sizeof(type), 
+            &(stk->egg), sizeof(u_int64_t));
+            for (int i = stk->size; i < stk->capacity / 2; i++) {
+                *((type*) ((char*) stk->data + 8 + i * sizeof(type))) = POISON;
+            }
+            hashCalc(stk);
+            
+        #else
+            realloc(stk->data, sizeof(type) * (stk->capacity / 2));
+        #endif
+
+        stk->capacity /= 2;
+
         return 0;
     }
 }
@@ -152,91 +201,111 @@ int stackPop(Stack* stk, type* param)
     #if DEBUG_LVL > 0
         STACK_DUMP(stk)
     #endif
-
-    memcpy(param, &(stk->data[--stk->size]), sizeof(type));
-    stk->data[stk->size] = POISON;
+    
+    #if DEBUG_LVL > 1
+        stk->size--;
+        memcpy(param, (char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type), sizeof(type));
+        printf("%d\n", *param);
+        *((type*) ((char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type))) = POISON;
+    #else
+        memcpy(param, &(stk->data[--stk->size]), sizeof(type));
+        stk->data[stk->size] = POISON;
+    #endif
 
     while (stk->capacity / 2 - stk->size > 3) {
-        stackResize(stk, 0);
+        #if DEBUG_LVL > 1
+            hashCalc(stk);
+        #endif
+
+        FUNC_REPORT(stackResize(stk, 0), stk)
     }
 
-    if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR;
+    #if DEBUG_LVL > 1
+        hashCalc(stk);
+    #endif
+
+    #if DEBUG_LVL > 0
+        STACK_DUMP(stk)
+    #endif
+
     return 0;
 }
 
 
 #if DEBUG_LVL > 0
-    int verifyStack(Stack* stk){
-        int isNotOk = 0;        
+    void verifyStack(Stack* stk){
 
+        #if DEBUG_LVL > 1
+            if (stk->hash != hashCalc(stk)) {
+                stk->status |= ERR_WRONG_HASH;
+            }
+        #endif
         if (stk->data == (type*) 0xBEBE) {                                                              
-            stk->status |= ERR_STACK_ALREADY_CLEANED;                     
-            isNotOk = 1;                                                                                  
+            stk->status |= ERR_STACK_ALREADY_CLEANED;                   
         }                                                                                                 
         if (stk->size > stk->capacity) {                                                              
             stk->status |= ERR_SIZE_GREATER_CAPACITY;                       
-            isNotOk = 1;                                                                                  
-        } 
-        if (stk->hash != hashCalc(stk)) {
-            stk->status |= ERR_WRONG_HASH;
         }
-        if (stk->egg != 0xFEE1DEAD^((int64_t) stk)) {
-            stk->status |= ERR_LEFT_CANARY_DAMAGED;
-        }
-        if (stk->chicken != 0xFEE1DEAD^((int64_t) stk)) {
-            stk->status |= ERR_RIGHT_CANARY_DAMAGED;
-        }
-        if ( *((int64_t*) stk->data) != 0xFEE1DEAD^((int64_t) stk)){
-            stk->status |= ERR_LEFT_DATACANARY_DAMAGED;
-        }
-        if ( *((int64_t*) ((char*) stk->data + 8 + stk->capacity)) != 0xFEE1DEAD^((int64_t) stk)) {
-            stk->status |= ERR_RIGHT_DATACANARY_DAMAGED;
-        }
-
-        for (int i = stk->size; i < stk->capacity; i++){
-            if (stk->data[i] != POISON){
-                stk->status |= ERR_EMPTY_ELEM_ISNT_POISONED;
-                isNotOk = 1;
+        #if DEBUG_LVL > 1 
+            if (stk->egg != (0xFEE1DEAD^((u_int64_t) stk))) {
+                stk->status |= ERR_LEFT_CANARY_DAMAGED;
             }
-        }
+            if (stk->chicken != (0xFEE1DEAD^((u_int64_t) stk))) {
+                stk->status |= ERR_RIGHT_CANARY_DAMAGED;
+            }
+            if ( (*((u_int64_t*) stk->data)) != (0xFEE1DEAD^((u_int64_t) stk))){
+                stk->status |= ERR_LEFT_DATACANARY_DAMAGED;
+            }
+            if ( (*((u_int64_t*) ((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type)))) != (0xFEE1DEAD^((u_int64_t) stk))) {
+                stk->status |= ERR_RIGHT_DATACANARY_DAMAGED;
+            }
+        
+            for (int i = stk->size; i < stk->capacity; i++) {
+                if ( *((type*) ((char*) stk->data + 8 + i * sizeof(type))) != POISON){
+                    stk->status |= ERR_EMPTY_ELEM_ISNT_POISONED;
+                }
+            }   
+        #else
+            for (int i = stk->size; i < stk->capacity; i++){
+                if (stk->data[i] != POISON){
+                    stk->status |= ERR_EMPTY_ELEM_ISNT_POISONED;
+                }
+            }
+        #endif
 
-        return isNotOk; 
     }
 
 
-    void stackDump(const Stack* stk, const char* func_name, const char* stack_name){
+    void stackDump(const Stack* stk, const char* func_name, const char* stack_name) {
         fprintf(logs, "Stack <> adress[%p] \"%s\" at %s\n", stk, stack_name, func_name);
         fprintf(logs, "---------------------------------------------------------------------------------\n");
         fprintf(logs, "STATUS = %16s\n" "stack size = %12d\n" "stack capacity = %8d\n" 
                 "data [%p]\n", (stk->status == OK) ? "OK" : "BROKEN", stk->size, stk->capacity, stk->data);
 
         if (stk->status){
-            switch (stk->status){
-                case ERR_EMPTY_ELEM_ISNT_POISONED:
-                    fprintf(logs, "Empty element isn't poisoned\n");
-                    break;
-
-                case ERR_SIZE_GREATER_CAPACITY:
-                    fprintf(logs, "Stack size if greater than stack capacity\n");
-                    break;
-
-                case ERR_STACK_ALREADY_CLEANED:
-                    fprintf(logs, "Stack has been already cleaned before\n");
-                    break;
-            }
+            printError(stk->status);
+            fprintf(logs, "\n");
         }
         else {
-            for (int i = 0; i < stk->size; i++){
-                fprintf(logs, "*data[%d] = %d\n", i, stk->data[i]);
-            }
-            for (int i = stk->size; i < stk->capacity; i++){
-                fprintf(logs, "*data[%d] = %X\n", i, stk->data[i]);
-            }
+            #if DEBUG_LVL > 1
+                for (int i = 0; i < stk->size; i++){
+                    fprintf(logs, "*data[%d] = %d\n", i, *((type*) ((char*) stk->data + 8 + i * sizeof(type))));
+                }
+                for (int i = stk->size; i < stk->capacity; i++){
+                    fprintf(logs, "*data[%d] = %X\n", i, *((type*) ((char*) stk->data + 8 + i * sizeof(type))));
+                }
+            #else
+                for (int i = 0; i < stk->size; i++){
+                    fprintf(logs, "*data[%d] = %d\n", i, stk->data[i]);
+                }
+                for (int i = stk->size; i < stk->capacity; i++){
+                    fprintf(logs, "*data[%d] = %X\n", i, stk->data[i]);
+                }
+            #endif
         }
 
         fprintf(logs, "---------------------------------------------------------------------------------\n\n\n");
-        fclose(logs);
-        logs = fopen("Logs", "a");
+        fflush(logs);
     }   
 
 #endif
@@ -289,14 +358,14 @@ static int memcpy(void* destination, void* sourse, int element_size)
 
 
 #if DEBUG_LVL > 1
-    static int hashCalc(Stack* stk) 
+    static unsigned int hashCalc(Stack* stk) 
     {
         CHECK_PTR(stk)
 
         stk->hash = 0;
-        stk->hash = MurmurHash2((char*) stk, sizeof(Stack)) + MurmurHash2((char*) stk->data, 16 + stk->capacity);
+        stk->hash = MurmurHash2((char*) stk, sizeof(Stack)) + MurmurHash2((char*) stk->data, 16 + stk->capacity * sizeof(type));
 
-        return 0;
+        return stk->hash;
     }
 #endif
 
@@ -349,52 +418,32 @@ static unsigned int MurmurHash2(char* key, unsigned int len)
 
 void printError(int Error) 
 {
-    switch(Error)
-    {
-        case 1:
-            fprintf(logs, "ERR_CALLING_FUNC_FAILED ");
-            break;
-        case 1 << 1:
-            fprintf(logs, "ERR_STACK_ALREARY_CREATED ");
-            break;
-        case 1 << 2:
-            fprintf(logs, "ERR_EMPTY_ELEM_ISNT_POISONED ");
-            break;
-        case 1 << 3:
-            fprintf(logs, "ERR_SIZE_GREATER_CAPACITY ");
-            break;
-        case 1 << 4:
-            fprintf(logs, "ERR_POP_EMPTY_STACK ");
-            break;
-        case 1 << 5:
-            fprintf(logs, "ERR_RIGHT_CANARY_DAMAGED ");
-            break;
-        case 1 << 6:
-            fprintf(logs, "ERR_LEFT_CANARY_DAMAGED ");
-            break;
-        case 1 << 7:
-            fprintf(logs, "ERR_WRONG_HASH ");
-            break;
-        case 1 << 8:
-            fprintf(logs, "ERR_INVALID_PTR ");
-            break;
-        case 1 << 9:
-            fprintf(logs, "ERR_REALLOC_FAILED ");
-            break;
-        case 1 << 10:
-            fprintf(logs, "ERR_PUSH_FAILED ");
-            break;
-        case 1 << 11:
-            fprintf(logs, "ERR_STACK_ALREADY_CLEANED ");
-            break;
-        case 1 << 12:
-            fprintf(logs, "ERR_LEFT_DATACANARY_DAMAGED ");
-            break;
-        case 1 << 13:
-            fprintf(logs, "ERR_RIGHT_DATACANARY_DAMAGED ");
-            break;
-        default:
-            fprintf(logs, "no errors ");
-    }   
-
+    if (Error & 1) 
+        fprintf(logs, "ERR_CALLING_FUNC_FAILED ");
+    if (Error & (1 << 1))
+        fprintf(logs, "ERR_STACK_ALREARY_CREATED ");
+    if (Error & (1 << 2))
+        fprintf(logs, "ERR_EMPTY_ELEM_ISNT_POISONED ");
+    if (Error & (1 << 3))
+        fprintf(logs, "ERR_SIZE_GREATER_CAPACITY ");
+    if (Error & (1 << 4))
+        fprintf(logs, "ERR_POP_EMPTY_STACK ");
+    if (Error & (1 << 5))
+        fprintf(logs, "ERR_RIGHT_CANARY_DAMAGED ");
+    if (Error & (1 << 6))
+        fprintf(logs, "ERR_LEFT_CANARY_DAMAGED ");
+    if (Error & (1 << 7))
+        fprintf(logs, "ERR_WRONG_HASH ");
+    if (Error & (1 << 8))
+        fprintf(logs, "ERR_INVALID_PTR ");
+    if (Error & (1 << 9))
+        fprintf(logs, "ERR_REALLOC_FAILED ");
+    if (Error & (1 << 10))
+        fprintf(logs, "ERR_PUSH_FAILED ");
+    if (Error & (1 << 11))
+        fprintf(logs, "ERR_STACK_ALREADY_CLEANED ");
+    if (Error & (1 << 12))
+        fprintf(logs, "ERR_LEFT_DATACANARY_DAMAGED ");
+    if (Error & (1 << 13))
+        fprintf(logs, "ERR_RIGHT_DATACANARY_DAMAGED ");
 }
