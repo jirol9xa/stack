@@ -6,6 +6,8 @@ int main(void) {
 
     Stack stk  = {};
     Stack stk1 = {};
+    printf("%lu\n", CANARY(&stk));
+    
     FUNC_REPORT(stackCtor(&stk, 2), &stk)
     type a = {};
     type b = {};
@@ -14,7 +16,12 @@ int main(void) {
     FUNC_REPORT(stackPush(&stk1, 9), &stk)
     FUNC_REPORT(stackPop(&stk1, &a), &stk)
     FUNC_REPORT(stackPop(&stk, &b), &stk)
+    FUNC_REPORT(stackPop(&stk, &b), &stk)
     printf("//////////////%d\n", a + b);
-    FUNC_REPORT(stackDtor(&stk), &stk)
+    FUNC_REPORT(stackDtor(&stk), &stk);
+    FUNC_REPORT(stackDtor(&stk1), &stk1);
+    FUNC_REPORT(stackDtor(&stk1), &stk1);
+
+    
     return 0;
 }

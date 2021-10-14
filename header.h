@@ -95,16 +95,19 @@ is_debug(code) -----+
             int status = (int) func;                                                                          \
             if (status) {                                                                                     \
                 fprintf(logs, "########################################################################\n"    \
-                            "function \"%s\" was failed with error code:\n", #func);                        \
+                            "function \"%s\" was failed with error code:\n", #func);                          \
                 printError(status);                                                                           \
                 fprintf(logs, "\nStack is:\n");                                                               \
                 STACK_DUMP(stack)                                                                             \
-                fprintf(logs, "########################################################################\n");  \
-                return ERR_CALLING_FUNC_FAILED;                                                               \
+                fprintf(logs, "########################################################################\n\n");\
             }                                                                                                 \
         }
 
-        #define CANARY(Stack) 0xFEE1DEAD^((u_int64_t) Stack)
+        #define CANARY(stack) (0xFEE1DEAD^((u_int64_t) stack))
+
+        #define LEFT_CANARY(stack) ((char*) stack->data - sizeof(u_int64_t))
+
+        #define RIGHT_CANARY(stack) ((char*) stack->data + stack->capacity * sizeof(type))
     #endif
 
 #endif
