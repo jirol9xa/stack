@@ -1,16 +1,15 @@
 #include "header.h"
 extern FILE* logs;
 
-static int capacity_calc(int elements_amount);
 static int stackResize(Stack* stk, int upper);
 static int memcpy(void* destination, void* sourse, int element_size);
 static unsigned int hashCalc(Stack* stk);
 static unsigned int MurmurHash2(char* key, unsigned int len);
-
+static void setCanary(Stack* stk, int is_left);
 
 int stackCtor(Stack* stk, int capacity) 
 {   
-    #if  DEBUG_LVL > 0
+    #if DEBUG_LVL > 0
         CHECK_PTR(stk)
     #endif
 
@@ -25,12 +24,14 @@ int stackCtor(Stack* stk, int capacity)
     
         stk->egg     = 0xFEE1DEAD^((u_int64_t) stk);
         stk->chicken = 0xFEE1DEAD^((u_int64_t) stk);
+        // длинные строчки ...
         memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
         memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type), &(stk->egg), sizeof(u_int64_t));
     #endif
 
     #if DEBUG_LVL > 1
         for (int i = 0; i < stk->capacity; i++) {
+            // длинные строчки ...
             *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
         }
 
@@ -86,45 +87,47 @@ int stackPush(Stack* stk, type value)
     stk->size ++;
 
     #if DEBUG_LVL > 1
+        // большая строчка ...
         memcpy((char*) stk->data + sizeof(u_int64_t) + (stk->size - 1) * sizeof(type), &value, sizeof(type));
         if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_PUSH_FAILED;
     #else
         stk->data[stk->size - 1] = value;
     #endif
-
+    STACK_DUMP(stk);
     return 0;
 }
 
 
 static int stackResize(Stack* stk, int upper) 
 {
-    #if DEBUG_LVL > 0
-        CHECK_PTR(stk)
-        STACK_DUMP(stk)
-        ASSERT_OK(stk)
-    #endif
+    is_debug_lvl_0(CHECK_PTR(stk)
+                   STACK_DUMP(stk)
+                   ASSERT_OK(stk))
+
+    //stk->capacity = stk->capacity * 2 + !stk->capacity;
 
     if (upper) {
         void* temp_ptr = nullptr;
         if (stk->capacity == 0) {
             stk->capacity = 1;
             
-            #if DEBUG_LVL > 1
-                    temp_ptr = realloc(stk->data, sizeof(type) * 1 + sizeof(u_int64_t) * 2);
-            #else
-                    temp_ptr = realloc(stk->data, sizeof(type) * 1);
-            #endif
+            bool is_need_canary = DEBUG_LVL > 1;
+            temp_ptr = realloc(stk->data, sizeof(type) + sizeof(u_int64_t) * 2 * is_need_canary);
             if (temp_ptr != nullptr) {
-                #if DEBUG_LVL > 1
-                stk->data = (type*) temp_ptr;
+                is_debug_lvl_1(
+                    stk->data = (type*) temp_ptr;
+                    // длинные строки
                     memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
                     memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type),
                     &(stk->egg), sizeof(u_int64_t));   
                     for (int i = stk->size; i < stk->capacity; i++) {
-                        *((type*) ((char*) stk->data + 8 + i * sizeof(type))) = POISON;
+                        // хачу функцию 
+                        *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
                     }
                     hashCalc(stk);
-                #else
+                )
+
+                #if DEBUG_LVL <= 0
                     for (int i = stk->size; i < stk->capacity; i++) {
                         stk->data[i] = POISON;
                     }
@@ -134,63 +137,53 @@ static int stackResize(Stack* stk, int upper)
             }
             else {
 
-            #if DEBUG_LVL > 0
-                STACK_DUMP(stk);
-            #endif 
-            
-            return ERR_RESIZE_FAILED;
+                is_debug_lvl_0(STACK_DUMP(stk));
+                
+                return ERR_RESIZE_FAILED;
             }
         }
-        #if DEBUG_LVL > 1
-            temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity * 2 + 2 * sizeof(u_int64_t));
-        #else
-            temp_ptr = realloc(stk->data, sizeof(type) * stk->capacity * 2);
-        #endif
+
+
+        bool is_need_canary = DEBUG_LVL > 1;
+        temp_ptr = realloc(stk->data, sizeof(type) * 2 * stk->capacity  + sizeof(u_int64_t) * 2 * is_need_canary);
 
         if (temp_ptr != nullptr) {
             stk->capacity *= 2;
             stk->data = (type*) temp_ptr;
 
-            #if DEBUG_LVL > 1
+            is_debug_lvl_1(
                 for (int i = stk->size; i < stk->capacity; i++) {
                     *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
                 }
                 memcpy((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type), 
                 &(stk->egg), sizeof(u_int64_t)); 
                 if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR;
-            #else
+            )
+                
+                #if DEBUG_LVL <= 0
                 for (int i = stk->size; i < stk->capacity; i++) {
                         stk->data[i] = POISON;
                 }
-            #endif
+                #endif
 
-            #if DEBUG_LVL > 0
-                STACK_DUMP(stk)
-            #endif
+            is_debug_lvl_0(STACK_DUMP(stk));
 
             return 0;
         }
         else {
-            #if DEBUG_LVL > 0
-                STACK_DUMP(stk)
-            #endif
+            is_debug_lvl_0(STACK_DUMP(stk));
             
             return ERR_RESIZE_FAILED;
         }
     }
     else {
-        #if DEBUG_LVL > 1
+        is_debug_lvl_1(
             realloc(stk->data, sizeof(type) * (stk->capacity / 2) + 2 * sizeof(u_int64_t));
-
-            memcpy((char*) stk->data, &(stk->egg), sizeof(u_int64_t));
             memcpy((char*) stk->data + sizeof(u_int64_t) + (stk->capacity / 2) * sizeof(type), 
             &(stk->egg), sizeof(u_int64_t));
-            for (int i = stk->size; i < stk->capacity / 2; i++) {
-                *((type*) ((char*) stk->data + sizeof(u_int64_t) + i * sizeof(type))) = POISON;
-            }
             hashCalc(stk);
-            
-        #else
+        )
+        #if DEBUG_LVL <= 1
             realloc(stk->data, sizeof(type) * (stk->capacity / 2));
         #endif
 
@@ -216,7 +209,7 @@ int stackPop(Stack* stk, type* param)
     #if DEBUG_LVL > 1
         stk->size--;
         memcpy(param, (char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type), sizeof(type));
-        *((type*) ((char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type))) = POISON;
+           *((type*) ((char*) stk->data + sizeof(u_int64_t) + stk->size * sizeof(type))) = POISON;
     #else
         memcpy(param, &(stk->data[--stk->size]), sizeof(type));
         stk->data[stk->size] = POISON;
@@ -245,34 +238,28 @@ int stackPop(Stack* stk, type* param)
     void verifyStack(Stack* stk){
 
         #if DEBUG_LVL > 1
-            PRINT_LINE()
             if (stk->hash != hashCalc(stk)) {
                 stk->status |= ERR_WRONG_HASH;
             }
         #endif
         if (stk->data == (type*) 0xBEBE) {
-            PRINT_LINE()                                                              
             stk->status |= ERR_STACK_ALREADY_CLEANED;                   
         }                                                                                                 
         if (stk->size > stk->capacity) {  
-            PRINT_LINE()                                                            
             stk->status |= ERR_SIZE_GREATER_CAPACITY;                       
         }
         #if DEBUG_LVL > 1 
+            // функция для вычисления канарейки
             if (stk->egg != (0xFEE1DEAD^((u_int64_t) stk))) {
-                PRINT_LINE()
                 stk->status |= ERR_LEFT_CANARY_DAMAGED;
             }
             if (stk->chicken != (0xFEE1DEAD^((u_int64_t) stk))) {
-                PRINT_LINE()
                 stk->status |= ERR_RIGHT_CANARY_DAMAGED;
             }
-            if ( (*((u_int64_t*) stk->data)) != (0xFEE1DEAD^((u_int64_t) stk))){
-                PRINT_LINE()
+            if ( (*((u_int64_t*) stk->data)) != (0xFEE1DEAD ^ ((u_int64_t) stk))){
                 stk->status |= ERR_LEFT_DATACANARY_DAMAGED;
             }
             if ( (*((u_int64_t*) ((char*) stk->data + sizeof(u_int64_t) + stk->capacity * sizeof(type)))) != (0xFEE1DEAD^((u_int64_t) stk))) {
-                PRINT_LINE()
                 stk->status |= ERR_RIGHT_DATACANARY_DAMAGED;
             }
         
@@ -389,6 +376,7 @@ static int memcpy(void* destination, void* sourse, int element_size)
 
 static unsigned int MurmurHash2(char* key, unsigned int len) 
 {
+    // большими буквами хекс
     const unsigned int m = 0x5bd1e995;
     const unsigned int seed = 0;
     const int r = 24;
@@ -464,3 +452,11 @@ void printError(int Error)
     if (Error & (1 << 13))
         fprintf(logs, "ERR_RIGHT_DATACANARY_DAMAGED ");
 }
+
+
+static void setCanary(Stack* stk, int is_left)
+{
+    
+}
+
+

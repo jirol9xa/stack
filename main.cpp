@@ -1,6 +1,6 @@
 #include "header.h"
 
-FILE* logs = fopen("Logs", "a");
+FILE* logs = fopen("Logs", "w");
 
 int main(void) {
 
@@ -9,7 +9,6 @@ int main(void) {
     FUNC_REPORT(stackCtor(&stk, 2), &stk)
     type a = {};
     type b = {};
-    type c = {};
     FUNC_REPORT(stackCtor(&stk1, 0), &stk)
     FUNC_REPORT(stackPush(&stk, 8), &stk)
     FUNC_REPORT(stackPush(&stk1, 9), &stk)
