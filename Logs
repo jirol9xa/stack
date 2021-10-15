@@ -1,184 +1,164 @@
-Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 38.Adress 0x7ffddff01d40 with addrreess of data: 0x55cf24084898
+Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 38.Adress 0x1ffeffff30 with addrreess of data: 0x4b9f6e8
 
 
-Stack <> adress[0x7ffddff01d40] "stk" at stackCtor
----------------------------------------------------------------------------------
-STATUS =               OK
-stack size =            0
-stack capacity =        4
-data [0x55cf24084898]
-*data[0] = DEAD
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
----------------------------------------------------------------------------------
-
-
-Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 38.Adress 0x7ffddff01d70 with addrreess of data: 0x55cf240858d8
-
-
-Stack <> adress[0x7ffddff01d70] "stk" at stackCtor
+Stack <> adress[0x1ffeffff30] "stk" at stackCtor
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        0
-data [0x55cf240858d8]
+data [0x4b9f6e8]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d40] "stk" at stackPush
+Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 38.Adress 0x1ffeffff60 with addrreess of data: 0x4ba07b8
+
+
+Stack <> adress[0x1ffeffff60] "stk" at stackCtor
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =        4
-data [0x55cf24084898]
-*data[0] = DEAD
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
+stack capacity =        0
+data [0x4ba07b8]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d40] "stk" at stackPush
+Stack <> adress[0x1ffeffff30] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        0
+data [0x4b9f6e8]
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x1ffeffff30] "stk" at stackResize
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        0
+data [0x4b9f6e8]
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x1ffeffff30] "stk" at stackResize
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        1
+data [0x4ba0808]
+*data[0] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x1ffeffff30] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            1
-stack capacity =        4
-data [0x55cf24084898]
+stack capacity =        1
+data [0x4ba0808]
 *data[0] = 8
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackPush
+Stack <> adress[0x1ffeffff60] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        0
-data [0x55cf240858d8]
+data [0x4ba07b8]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackResize
+Stack <> adress[0x1ffeffff60] "stk" at stackResize
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        0
-data [0x55cf240858d8]
+data [0x4ba07b8]
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackResize
+Stack <> adress[0x1ffeffff60] "stk" at stackResize
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        1
-data [0x55cf240858d8]
+data [0x4ba0868]
 *data[0] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackPush
+Stack <> adress[0x1ffeffff60] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            1
 stack capacity =        1
-data [0x55cf240858d8]
+data [0x4ba0868]
 *data[0] = 9
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackPop
+Stack <> adress[0x1ffeffff60] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            1
 stack capacity =        1
-data [0x55cf240858d8]
+data [0x4ba0868]
 *data[0] = 9
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackPop
+Stack <> adress[0x1ffeffff60] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        1
-data [0x55cf240858d8]
+data [0x4ba0868]
 *data[0] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d40] "stk" at stackPop
+Stack <> adress[0x1ffeffff30] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            1
-stack capacity =        4
-data [0x55cf24084898]
+stack capacity =        1
+data [0x4ba0808]
 *data[0] = 8
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d40] "stk" at stackPop
----------------------------------------------------------------------------------
-STATUS =               OK
-stack size =            0
-stack capacity =        4
-data [0x55cf24084898]
-*data[0] = DEAD
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
----------------------------------------------------------------------------------
-
-
-########################################################################
-function "stackPop(&stk, &b)" was failed with error code:
-ERR_POP_EMPTY_STACK 
-Stack is:
-Stack <> adress[0x7ffddff01d40] "&stk" at main
----------------------------------------------------------------------------------
-STATUS =               OK
-stack size =            0
-stack capacity =        4
-data [0x55cf24084898]
-*data[0] = DEAD
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
----------------------------------------------------------------------------------
-
-
-########################################################################
-
-Stack <> adress[0x7ffddff01d40] "stk" at stackDtor
----------------------------------------------------------------------------------
-STATUS =               OK
-stack size =            0
-stack capacity =        4
-data [0x55cf24084898]
-*data[0] = DEAD
-*data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
----------------------------------------------------------------------------------
-
-
-Stack <> adress[0x7ffddff01d70] "stk" at stackDtor
+Stack <> adress[0x1ffeffff30] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
 stack capacity =        1
-data [0x55cf240858d8]
+data [0x4ba0808]
 *data[0] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffddff01d70] "stk" at stackDtor
+Stack <> adress[0x1ffeffff30] "stk" at stackDtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        1
+data [0x4ba0808]
+*data[0] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x1ffeffff60] "stk" at stackDtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        1
+data [0x4ba0868]
+*data[0] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x1ffeffff60] "stk" at stackDtor
 ---------------------------------------------------------------------------------
 STATUS =           BROKEN
 stack size =            0
@@ -192,7 +172,7 @@ ERR_STACK_ALREADY_CLEANED
 function "stackDtor(&stk1)" was failed with error code:
 ERR_STACK_BROKEN 
 Stack is:
-Stack <> adress[0x7ffddff01d70] "&stk1" at main
+Stack <> adress[0x1ffeffff60] "&stk1" at main
 ---------------------------------------------------------------------------------
 STATUS =           BROKEN
 stack size =            0

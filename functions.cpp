@@ -54,7 +54,11 @@ int stackDtor(Stack* stk)
     stk->capacity = 0;
     stk->size = 0;
 
-    free(LEFT_CANARY(stk));
+    is_debug_lvl_1(free(LEFT_CANARY(stk)));
+
+    #if DEBUG_LVL <= 1 
+        free(stk->data);
+    #endif
     stk->data = (type*) 0xBEBE;
     return 0;
 }
