@@ -20,7 +20,7 @@
 #endif
 
 #define type int
-#define DEBUG_LVL 3
+#define DEBUG_LVL 1
 const type POISON = 0xDEAD; 
 
 /*

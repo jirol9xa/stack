@@ -110,8 +110,9 @@ static int stackResize(Stack* stk, int upper)
         if (stk->capacity == 0) {
             stk->capacity = 1;
             
-            bool is_need_canary = DEBUG_LVL > 1;
-            temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) + sizeof(u_int64_t) * 2 * is_need_canary);
+            temp_ptr = realloc(stk->data, sizeof(type));
+            is_debug_lvl_1(temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) + sizeof(u_int64_t) * 2 ));
+
             if (temp_ptr != nullptr) {
                 is_debug_lvl_1(
                     stk->data = (type*) ((char*)temp_ptr + sizeof(u_int64_t));
@@ -136,9 +137,8 @@ static int stackResize(Stack* stk, int upper)
             }
         }
 
-
-        bool is_need_canary = DEBUG_LVL > 1;
-        temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) * 2 * stk->capacity  + sizeof(u_int64_t) * 2 * is_need_canary);
+        temp_ptr = realloc(stk->data, sizeof(type) * 2 * stk->capacity);
+        is_debug_lvl_1(temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) * 2 * stk->capacity  + sizeof(u_int64_t) * 2));
 
         if (temp_ptr != nullptr) {
             stk->capacity *= 2;
