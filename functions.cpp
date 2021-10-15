@@ -230,7 +230,6 @@ is_debug_lvl_0(
                 stk->status |= ERR_SIZE_GREATER_CAPACITY;                       
             }
             is_debug_lvl_1(
-                // функция для вычисления канарейки
                 if (stk->egg != CANARY(stk)) {
                     printf("stk->egg ---- %lu\n", stk->egg);
                     stk->status |= ERR_LEFT_CANARY_DAMAGED;
@@ -428,15 +427,16 @@ void printError(int Error)
         fprintf(logs, "ERR_STACK_BROKEN ");
 }
 
-
-static void setCanary(Stack* stk, int is_left)
-{
-    if (is_left == 1) {
-        *((u_int64_t*) LEFT_CANARY(stk)) = CANARY(stk);
+is_debug_lvl_1(
+    static void setCanary(Stack* stk, int is_left)
+    {
+        if (is_left == 1) {
+            *((u_int64_t*) LEFT_CANARY(stk)) = CANARY(stk);
+        }
+        else {
+            *((u_int64_t*) RIGHT_CANARY(stk)) = CANARY(stk);
+        }
     }
-    else {
-        *((u_int64_t*) RIGHT_CANARY(stk)) = CANARY(stk);
-    }
-}
+)
 
 

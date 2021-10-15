@@ -1,7 +1,3 @@
-/*
-    где гарды?
-    почему тут инклюды?
-*/
 #ifndef STDIO
     #define STDIO
     #include <stdio.h>
@@ -20,7 +16,7 @@
 #endif
 
 #define type int
-#define DEBUG_LVL 1
+#define DEBUG_LVL 0
 const type POISON = 0xDEAD; 
 
 /*
@@ -45,8 +41,10 @@ is_debug(code) -----+
 
 #ifndef DEBUG
     #define DEBUG
-    #if (DEBUG_LVL > 0)
-        enum Error {
+
+    #define FUNC_REPORT(func, stack)  func;
+    
+    enum Error {
             OK = 0, 
             ERR_CALLING_FUNC_FAILED        =         1,
             ERR_STACK_ALREARY_CREATED      =    1 << 1,
@@ -68,6 +66,7 @@ is_debug(code) -----+
             ERR_STACK_BROKEN               =    1 << 17
         };
 
+    #if (DEBUG_LVL > 0)
         #define STACK_CREATION_INFO(stack) {                                                                  \
             fprintf(logs, "Stack \"%s\" was created in function \"%s\" on line %d."                           \
             "Adress %p with addrreess of data: %p\n\n\n", #stack, __PRETTY_FUNCTION__, __LINE__,              \

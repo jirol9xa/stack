@@ -1,12 +1,11 @@
 #include "header.h"
 
-FILE* logs = fopen("Logs", "w");
+is_debug_lvl_0(FILE* logs = fopen("Logs", "w"));
 
 int main(void) {
 
     Stack stk  = {};
     Stack stk1 = {};
-    printf("%lu\n", CANARY(&stk));
     
     FUNC_REPORT(stackCtor(&stk, 0), &stk)
     type a = {};
@@ -19,8 +18,7 @@ int main(void) {
     printf("//////////////%d\n", a + b);
     FUNC_REPORT(stackDtor(&stk), &stk);
     FUNC_REPORT(stackDtor(&stk1), &stk1);
-    FUNC_REPORT(stackDtor(&stk1), &stk1);
 
-    fclose(logs);
+    is_debug_lvl_0(fclose(logs));
     return 0;
 }
