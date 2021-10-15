@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Stack: Исходный файл header.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">header.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="header_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STDIO</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">    #define STDIO</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">    #include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef STDLIB</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="header_8h.html#affeebf9d5a2a69db55ffa96bd8bce1d0">    6</a></span>&#160;<span class="preprocessor">    #define STDLIB</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">    #include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CTYPE</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="header_8h.html#ada7f67590741068a844df092d36b4fe6">   10</a></span>&#160;<span class="preprocessor">    #define CTYPE</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef CMATH</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="header_8h.html#a8d7c8c9617e0cb01d7585581a281100a">   14</a></span>&#160;<span class="preprocessor">    #define CMATH</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="header_8h.html#a53155e22eaa05190346890241be3367c">   18</a></span>&#160;<span class="preprocessor">#define type int</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="header_8h.html#af3ae67c477fc1b8091c3b654343a08a3">   19</a></span>&#160;<span class="preprocessor">#define DEBUG_LVL 3</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="header_8h.html#ab960bda823c2f3833e70e8832a064ae4">   20</a></span>&#160;<span class="keyword">const</span> <a class="code" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> <a class="code" href="header_8h.html#ab960bda823c2f3833e70e8832a064ae4">POISON</a> = 0xDEAD; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">                    +--&gt; code, при DEBUG_LVL &gt; 1</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">                    |</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">is_debug(code) -----+</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">                    |</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">                    +--&gt; `пустота`, при !(DEBUG_LVL &gt; 1)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if DEBUG_LVL &gt; 0</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="header_8h.html#a434f61f789caf48d4b5c114111670b09">   31</a></span>&#160;<span class="preprocessor">    #define is_debug_lvl_0(code) code</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    #define is_debug_lvl_0(code) ;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if DEBUG_LVL &gt; 1</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="header_8h.html#a7e85973c68cc4009055ad118956dd1ec">   37</a></span>&#160;<span class="preprocessor">    #define is_debug_lvl_1(code) code</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    #define is_debug_lvl_1(code) ;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifndef DEBUG</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="header_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">   43</a></span>&#160;<span class="preprocessor">    #define DEBUG</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    #define FUNC_REPORT(func, stack)  func;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">   47</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59">   48</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a> = 0, </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a15c5ff1d87ac58f7adcbe6f99c5a4f4a">   49</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a15c5ff1d87ac58f7adcbe6f99c5a4f4a">ERR_CALLING_FUNC_FAILED</a>        =         1,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a3824a3130af89cded77e4c2fb19ad508">   50</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a3824a3130af89cded77e4c2fb19ad508">ERR_STACK_ALREARY_CREATED</a>      =    1 &lt;&lt; 1,</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa">   51</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa">ERR_EMPTY_ELEM_ISNT_POISONED</a>   =    1 &lt;&lt; 2,</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9">   52</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9">ERR_SIZE_GREATER_CAPACITY</a>      =    1 &lt;&lt; 3,</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae5321f52925cdf1cc50bbc65f3b548e8">   53</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae5321f52925cdf1cc50bbc65f3b548e8">ERR_POP_EMPTY_STACK</a>            =    1 &lt;&lt; 4,</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b">   54</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b">ERR_RIGHT_CANARY_DAMAGED</a>       =    1 &lt;&lt; 5,</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a">   55</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a">ERR_LEFT_CANARY_DAMAGED</a>        =    1 &lt;&lt; 6,</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382">   56</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382">ERR_WRONG_HASH</a>                 =    1 &lt;&lt; 7,</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a24664dafe5df253f7438bf3c82145e78">   57</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a24664dafe5df253f7438bf3c82145e78">ERR_INVALID_PTR</a>                =    1 &lt;&lt; 8,</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5b49a3646e06031905865c04c5b04514">   58</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5b49a3646e06031905865c04c5b04514">ERR_REALLOC_FAILED</a>             =    1 &lt;&lt; 9,</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5abc201a9e054ebf1f144f3c95bf7ff646">   59</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5abc201a9e054ebf1f144f3c95bf7ff646">ERR_PUSH_FAILED</a>                =    1 &lt;&lt; 10,</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">   60</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">ERR_STACK_ALREADY_CLEANED</a>      =    1 &lt;&lt; 11,</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae">   61</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae">ERR_LEFT_DATACANARY_DAMAGED</a>    =    1 &lt;&lt; 12,</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b">   62</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b">ERR_RIGHT_DATACANARY_DAMAGED</a>   =    1 &lt;&lt; 13,</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a4e2e5fa540fcffdd72ba93c1ef2a66c5">   63</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a4e2e5fa540fcffdd72ba93c1ef2a66c5">ERR_RESIZE_FAILED</a>              =    1 &lt;&lt; 14,</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5aae7d50c908f259eceac669f04918d0e3">   64</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5aae7d50c908f259eceac669f04918d0e3">ERR_POP_FAILED</a>                 =    1 &lt;&lt; 15,</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ad5251abb0120481e10d6883a72ecf3ca">   65</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ad5251abb0120481e10d6883a72ecf3ca">ERR_DUMP_FAILED</a>                =    1 &lt;&lt; 16,</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a4c5da27c7b08b32fecf8195d37c6c908">   66</a></span>&#160;            <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a4c5da27c7b08b32fecf8195d37c6c908">ERR_STACK_BROKEN</a>               =    1 &lt;&lt; 17</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    #if (DEBUG_LVL &gt; 0)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="header_8h.html#ad87b5975edc497eb621ad896d313dd2b">   70</a></span>&#160;<span class="preprocessor">        #define STACK_CREATION_INFO(stack) {                                                                  \</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">            fprintf(logs, &quot;Stack \&quot;%s\&quot; was created in function \&quot;%s\&quot; on line %d.&quot;                           \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">            &quot;Adress %p with addrreess of data: %p\n\n\n&quot;, #stack, __PRETTY_FUNCTION__, __LINE__,              \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">            stack, stack-&gt;data);                                                                              \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="header_8h.html#a43938dd6e76c2c048c9e17dcf2983e1d">   76</a></span>&#160;<span class="preprocessor">        #define STACK_DUMP(stack) {                                                                           \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">            verifyStack(stack);                                                                               \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">            stackDump(stack, __func__, #stack);                                                               \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        }   </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="header_8h.html#a0da0292ec64f696571bf975791fc0805">   82</a></span>&#160;<span class="preprocessor">        #define CHECK_PTR(arg) {                                                                              \</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">            if (!(arg)) {                                                                                     \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">                fprintf(logs, &quot;[%s:%d] --- %s failed\n\n\n&quot;, __func__, __LINE__, #arg);                       \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">                return ERR_INVALID_PTR;                                                                       \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">            }                                                                                                 \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="header_8h.html#a426fbdbad447761a6ab6751b193e54f1">   89</a></span>&#160;<span class="preprocessor">        #define ASSERT_OK(stack) {                                                                            \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">            if (stack-&gt;status) return ERR_STACK_BROKEN;                                                       \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="header_8h.html#af5c4fa9285c58267c3503fc510467209">   93</a></span>&#160;<span class="preprocessor">        #define FUNC_REPORT(func, stack) {                                                                    \</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">            int status = (int) func;                                                                          \</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">            if (status) {                                                                                     \</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">                fprintf(logs, &quot;########################################################################\n&quot;    \</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">                            &quot;function \&quot;%s\&quot; was failed with error code:\n&quot;, #func);                          \</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">                printError(status);                                                                           \</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">                fprintf(logs, &quot;\nStack is:\n&quot;);                                                               \</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">                STACK_DUMP(stack)                                                                             \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">                fprintf(logs, &quot;########################################################################\n\n&quot;);\</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">            }                                                                                                 \</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">  105</a></span>&#160;<span class="preprocessor">        #define CANARY(stack) (0xFEE1DEAD^((u_int64_t) stack))</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="header_8h.html#a97b16530da162b627bb2b2efcbbdde15">  107</a></span>&#160;<span class="preprocessor">        #define LEFT_CANARY(stack) ((char*) stack-&gt;data - sizeof(u_int64_t))</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="header_8h.html#af6ad00c25b54f2a22d02309bb816235d">  109</a></span>&#160;<span class="preprocessor">        #define RIGHT_CANARY(stack) ((char*) stack-&gt;data + stack-&gt;capacity * sizeof(type))</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="struct_stack.html">  114</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_stack.html">Stack</a></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="struct_stack.html#afa4ffea81aa4a6b7668a3ed5bfa6917d">is_debug_lvl_1</a>(u_int64_t egg);</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="struct_stack.html#a0e8bfe96671bc63a72f9753f5b24a242">  118</a></span>&#160;    <a class="code" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a>* <a class="code" href="struct_stack.html#a0e8bfe96671bc63a72f9753f5b24a242">data</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="struct_stack.html#a7b167082a4c6b68566501eaa2423cb3d">  119</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_stack.html#a7b167082a4c6b68566501eaa2423cb3d">size</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="struct_stack.html#a9d88966b156fd4547e9b8a2e7fe48427">  120</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_stack.html#a9d88966b156fd4547e9b8a2e7fe48427">capacity</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="header_8h.html#a434f61f789caf48d4b5c114111670b09">is_debug_lvl_0</a>(</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">int</span> status;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="struct_stack.html#afa4ffea81aa4a6b7668a3ed5bfa6917d">is_debug_lvl_1</a>(u_int64_t hash);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="struct_stack.html#afa4ffea81aa4a6b7668a3ed5bfa6917d">is_debug_lvl_1</a>(u_int64_t chicken);  </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    ) </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">int</span> <a class="code" href="header_8h.html#a749ee7148ef942626518dbe86c790887">stackCtor</a>(<a class="code" href="struct_stack.html">Stack</a>* stk, <span class="keywordtype">int</span> capacity);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keywordtype">int</span> <a class="code" href="header_8h.html#a56bc7076d4bb9970b4aba173c178cc99">stackDtor</a>(<a class="code" href="struct_stack.html">Stack</a>* stk);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">int</span> <a class="code" href="header_8h.html#ae09b7d22b483db340d588790d66dda27">stackPush</a>(<a class="code" href="struct_stack.html">Stack</a>* stk, <a class="code" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> value);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> <a class="code" href="header_8h.html#a35842d96245f2c0bb2768a5e942011bc">stackPop</a>(<a class="code" href="struct_stack.html">Stack</a>* stk, <a class="code" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a>* param);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">void</span> <a class="code" href="header_8h.html#acd6712a68337b8e5b1f255b0be40e84e">stackDump</a>(<span class="keyword">const</span> <a class="code" href="struct_stack.html">Stack</a>* stk, <span class="keyword">const</span> <span class="keywordtype">char</span>* func_name, <span class="keyword">const</span> <span class="keywordtype">char</span>* stack_name);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">void</span> <a class="code" href="header_8h.html#a568829cc5c0b0bba47ec1c7b2ef8dcc1">verifyStack</a>(<a class="code" href="struct_stack.html">Stack</a>* stk);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">void</span> <a class="code" href="header_8h.html#a088f94b5422d72b3aa4a15456bfdf757">printError</a>(<span class="keywordtype">int</span> <a class="code" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a>);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae">ERR_LEFT_DATACANARY_DAMAGED</a></div><div class="ttdeci">@ ERR_LEFT_DATACANARY_DAMAGED</div><div class="ttdef"><b>Definition:</b> header.h:61</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b">ERR_RIGHT_CANARY_DAMAGED</a></div><div class="ttdeci">@ ERR_RIGHT_CANARY_DAMAGED</div><div class="ttdef"><b>Definition:</b> header.h:54</div></div>
+<div class="ttc" id="aheader_8h_html_a568829cc5c0b0bba47ec1c7b2ef8dcc1"><div class="ttname"><a href="header_8h.html#a568829cc5c0b0bba47ec1c7b2ef8dcc1">verifyStack</a></div><div class="ttdeci">void verifyStack(Stack *stk)</div><div class="ttdoc">Функция проверки стека на корректность</div></div>
+<div class="ttc" id="astruct_stack_html_afa4ffea81aa4a6b7668a3ed5bfa6917d"><div class="ttname"><a href="struct_stack.html#afa4ffea81aa4a6b7668a3ed5bfa6917d">Stack::is_debug_lvl_1</a></div><div class="ttdeci">is_debug_lvl_1(u_int64_t egg)</div></div>
+<div class="ttc" id="aheader_8h_html_ab960bda823c2f3833e70e8832a064ae4"><div class="ttname"><a href="header_8h.html#ab960bda823c2f3833e70e8832a064ae4">POISON</a></div><div class="ttdeci">const type POISON</div><div class="ttdef"><b>Definition:</b> header.h:20</div></div>
+<div class="ttc" id="aheader_8h_html_a53155e22eaa05190346890241be3367c"><div class="ttname"><a href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a></div><div class="ttdeci">#define type</div><div class="ttdef"><b>Definition:</b> header.h:18</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a4e2e5fa540fcffdd72ba93c1ef2a66c5"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a4e2e5fa540fcffdd72ba93c1ef2a66c5">ERR_RESIZE_FAILED</a></div><div class="ttdeci">@ ERR_RESIZE_FAILED</div><div class="ttdef"><b>Definition:</b> header.h:63</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> header.h:47</div></div>
+<div class="ttc" id="astruct_stack_html_a0e8bfe96671bc63a72f9753f5b24a242"><div class="ttname"><a href="struct_stack.html#a0e8bfe96671bc63a72f9753f5b24a242">Stack::data</a></div><div class="ttdeci">type * data</div><div class="ttdef"><b>Definition:</b> header.h:118</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">ERR_STACK_ALREADY_CLEANED</a></div><div class="ttdeci">@ ERR_STACK_ALREADY_CLEANED</div><div class="ttdef"><b>Definition:</b> header.h:60</div></div>
+<div class="ttc" id="astruct_stack_html_a7b167082a4c6b68566501eaa2423cb3d"><div class="ttname"><a href="struct_stack.html#a7b167082a4c6b68566501eaa2423cb3d">Stack::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> header.h:119</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5aae7d50c908f259eceac669f04918d0e3"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5aae7d50c908f259eceac669f04918d0e3">ERR_POP_FAILED</a></div><div class="ttdeci">@ ERR_POP_FAILED</div><div class="ttdef"><b>Definition:</b> header.h:64</div></div>
+<div class="ttc" id="aheader_8h_html_a35842d96245f2c0bb2768a5e942011bc"><div class="ttname"><a href="header_8h.html#a35842d96245f2c0bb2768a5e942011bc">stackPop</a></div><div class="ttdeci">type stackPop(Stack *stk, type *param)</div><div class="ttdoc">Функция извлечения элемента</div><div class="ttdef"><b>Definition:</b> functions.cpp:228</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5ae5321f52925cdf1cc50bbc65f3b548e8"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae5321f52925cdf1cc50bbc65f3b548e8">ERR_POP_EMPTY_STACK</a></div><div class="ttdeci">@ ERR_POP_EMPTY_STACK</div><div class="ttdef"><b>Definition:</b> header.h:53</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382">ERR_WRONG_HASH</a></div><div class="ttdeci">@ ERR_WRONG_HASH</div><div class="ttdef"><b>Definition:</b> header.h:56</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa">ERR_EMPTY_ELEM_ISNT_POISONED</a></div><div class="ttdeci">@ ERR_EMPTY_ELEM_ISNT_POISONED</div><div class="ttdef"><b>Definition:</b> header.h:51</div></div>
+<div class="ttc" id="astruct_stack_html_a9d88966b156fd4547e9b8a2e7fe48427"><div class="ttname"><a href="struct_stack.html#a9d88966b156fd4547e9b8a2e7fe48427">Stack::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdef"><b>Definition:</b> header.h:120</div></div>
+<div class="ttc" id="aheader_8h_html_ae09b7d22b483db340d588790d66dda27"><div class="ttname"><a href="header_8h.html#ae09b7d22b483db340d588790d66dda27">stackPush</a></div><div class="ttdeci">int stackPush(Stack *stk, type value)</div><div class="ttdoc">Функция добавления элемента в стек</div><div class="ttdef"><b>Definition:</b> functions.cpp:107</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a15c5ff1d87ac58f7adcbe6f99c5a4f4a"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a15c5ff1d87ac58f7adcbe6f99c5a4f4a">ERR_CALLING_FUNC_FAILED</a></div><div class="ttdeci">@ ERR_CALLING_FUNC_FAILED</div><div class="ttdef"><b>Definition:</b> header.h:49</div></div>
+<div class="ttc" id="astruct_stack_html"><div class="ttname"><a href="struct_stack.html">Stack</a></div><div class="ttdef"><b>Definition:</b> header.h:114</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a">ERR_LEFT_CANARY_DAMAGED</a></div><div class="ttdeci">@ ERR_LEFT_CANARY_DAMAGED</div><div class="ttdef"><b>Definition:</b> header.h:55</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5ad5251abb0120481e10d6883a72ecf3ca"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ad5251abb0120481e10d6883a72ecf3ca">ERR_DUMP_FAILED</a></div><div class="ttdeci">@ ERR_DUMP_FAILED</div><div class="ttdef"><b>Definition:</b> header.h:65</div></div>
+<div class="ttc" id="aheader_8h_html_a434f61f789caf48d4b5c114111670b09"><div class="ttname"><a href="header_8h.html#a434f61f789caf48d4b5c114111670b09">is_debug_lvl_0</a></div><div class="ttdeci">#define is_debug_lvl_0(code)</div><div class="ttdef"><b>Definition:</b> header.h:31</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Definition:</b> header.h:48</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b">ERR_RIGHT_DATACANARY_DAMAGED</a></div><div class="ttdeci">@ ERR_RIGHT_DATACANARY_DAMAGED</div><div class="ttdef"><b>Definition:</b> header.h:62</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a24664dafe5df253f7438bf3c82145e78"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a24664dafe5df253f7438bf3c82145e78">ERR_INVALID_PTR</a></div><div class="ttdeci">@ ERR_INVALID_PTR</div><div class="ttdef"><b>Definition:</b> header.h:57</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5abc201a9e054ebf1f144f3c95bf7ff646"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5abc201a9e054ebf1f144f3c95bf7ff646">ERR_PUSH_FAILED</a></div><div class="ttdeci">@ ERR_PUSH_FAILED</div><div class="ttdef"><b>Definition:</b> header.h:59</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a4c5da27c7b08b32fecf8195d37c6c908"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a4c5da27c7b08b32fecf8195d37c6c908">ERR_STACK_BROKEN</a></div><div class="ttdeci">@ ERR_STACK_BROKEN</div><div class="ttdef"><b>Definition:</b> header.h:66</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9">ERR_SIZE_GREATER_CAPACITY</a></div><div class="ttdeci">@ ERR_SIZE_GREATER_CAPACITY</div><div class="ttdef"><b>Definition:</b> header.h:52</div></div>
+<div class="ttc" id="aheader_8h_html_a56bc7076d4bb9970b4aba173c178cc99"><div class="ttname"><a href="header_8h.html#a56bc7076d4bb9970b4aba173c178cc99">stackDtor</a></div><div class="ttdeci">int stackDtor(Stack *stk)</div><div class="ttdoc">Функция уничтожения стека</div><div class="ttdef"><b>Definition:</b> functions.cpp:86</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a3824a3130af89cded77e4c2fb19ad508"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a3824a3130af89cded77e4c2fb19ad508">ERR_STACK_ALREARY_CREATED</a></div><div class="ttdeci">@ ERR_STACK_ALREARY_CREATED</div><div class="ttdef"><b>Definition:</b> header.h:50</div></div>
+<div class="ttc" id="aheader_8h_html_a749ee7148ef942626518dbe86c790887"><div class="ttname"><a href="header_8h.html#a749ee7148ef942626518dbe86c790887">stackCtor</a></div><div class="ttdeci">int stackCtor(Stack *stk, int capacity)</div><div class="ttdoc">Функция создания стека</div><div class="ttdef"><b>Definition:</b> functions.cpp:50</div></div>
+<div class="ttc" id="aheader_8h_html_a088f94b5422d72b3aa4a15456bfdf757"><div class="ttname"><a href="header_8h.html#a088f94b5422d72b3aa4a15456bfdf757">printError</a></div><div class="ttdeci">void printError(int Error)</div><div class="ttdoc">Функция печати ошибок</div></div>
+<div class="ttc" id="aheader_8h_html_acd6712a68337b8e5b1f255b0be40e84e"><div class="ttname"><a href="header_8h.html#acd6712a68337b8e5b1f255b0be40e84e">stackDump</a></div><div class="ttdeci">void stackDump(const Stack *stk, const char *func_name, const char *stack_name)</div><div class="ttdoc">Функция вывода информации о стеке и функции, которая его вызвала</div></div>
+<div class="ttc" id="aheader_8h_html_a2c3e4bb40f36b262a5214e2da2bca9c5a5b49a3646e06031905865c04c5b04514"><div class="ttname"><a href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5b49a3646e06031905865c04c5b04514">ERR_REALLOC_FAILED</a></div><div class="ttdeci">@ ERR_REALLOC_FAILED</div><div class="ttdef"><b>Definition:</b> header.h:58</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

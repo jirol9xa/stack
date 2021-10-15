@@ -1,0 +1,362 @@
+\hypertarget{functions_8cpp}{}\doxysection{Файл functions.\+cpp}
+\label{functions_8cpp}\index{functions.cpp@{functions.cpp}}
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для functions.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{functions_8cpp_acd47efcfe6496ccb3b8bf2a58d3f7260}{stack\+Resize}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, int upper)
+\begin{DoxyCompactList}\small\item\em Функция изменения емкости стека \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{functions_8cpp_a525d034bef0995c4709388f2c07fda5b}{Mem\+Cpy}} (void $\ast$destination, void $\ast$\mbox{\hyperlink{functions_8cpp_a6be0202d766384de889755c765e80e12}{sourse}}, int \mbox{\hyperlink{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}{element\+\_\+size}})
+\begin{DoxyCompactList}\small\item\em Функция копирования памяти \end{DoxyCompactList}\item 
+static unsigned int \mbox{\hyperlink{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}{hash\+Calc}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk)
+\begin{DoxyCompactList}\small\item\em Функция подсчета хеша \end{DoxyCompactList}\item 
+static unsigned int \mbox{\hyperlink{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}{Murmur\+Hash2}} (char $\ast$key, unsigned int \mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}})
+\begin{DoxyCompactList}\small\item\em Функция посчет хеша по алгоритму Murmur\+Hash2. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{functions_8cpp_a998d753a65bac51b0cdf8b501756bb62}{set\+Canary}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, int is\+\_\+left)
+\begin{DoxyCompactList}\small\item\em Функция установки левой или правой канарейки для data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8cpp_a749ee7148ef942626518dbe86c790887}{stack\+Ctor}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, int capacity)
+\begin{DoxyCompactList}\small\item\em Функция создания стека \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8cpp_a56bc7076d4bb9970b4aba173c178cc99}{stack\+Dtor}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk)
+\begin{DoxyCompactList}\small\item\em Функция уничтожения стека \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8cpp_ae09b7d22b483db340d588790d66dda27}{stack\+Push}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, \mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}} value)
+\begin{DoxyCompactList}\small\item\em Функция добавления элемента в стек \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8cpp_a1f7bc09af4810b852177adbbefef019e}{stack\+Pop}} (\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, \mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}} $\ast$param)
+\begin{DoxyCompactList}\small\item\em Функция извлечения элемента \end{DoxyCompactList}\item 
+\mbox{\hyperlink{functions_8cpp_ab6a7f118acbb3bf426cc42b327cba415}{is\+\_\+debug\+\_\+lvl\+\_\+0}} (void \mbox{\hyperlink{header_8h_a568829cc5c0b0bba47ec1c7b2ef8dcc1}{verify\+Stack}}(\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk)\{ \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}==(\mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}} $\ast$) 0x\+B\+E\+BE) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797}{E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+C\+L\+E\+A\+N\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$status \&(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797}{E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+C\+L\+E\+A\+N\+ED}})==0)\{ \mbox{\hyperlink{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}{is\+\_\+debug\+\_\+lvl\+\_\+1}}(\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$hash !=\mbox{\hyperlink{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}{hash\+Calc}}(stk)) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382}{E\+R\+R\+\_\+\+W\+R\+O\+N\+G\+\_\+\+H\+A\+SH}};\}) \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$size $>$ stk-\/$>$capacity) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9}{E\+R\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+C\+A\+P\+A\+C\+I\+TY}};\} \mbox{\hyperlink{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}{is\+\_\+debug\+\_\+lvl\+\_\+1}}(\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$egg !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk)) \{ printf(\char`\"{}stk-\/$>$egg -\/-\/-\/-\/ \%lu\textbackslash{}n\char`\"{}, stk-\/$>$egg);stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a}{E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$chicken !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk)) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b}{E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(($\ast$((u\+\_\+int64\+\_\+t $\ast$)(\mbox{\hyperlink{header_8h_a97b16530da162b627bb2b2efcbbdde15}{L\+E\+F\+T\+\_\+\+C\+A\+N\+A\+RY}}(stk)))) !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk))\{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae}{E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(($\ast$((u\+\_\+int64\+\_\+t $\ast$)(\mbox{\hyperlink{header_8h_af6ad00c25b54f2a22d02309bb816235d}{R\+I\+G\+H\+T\+\_\+\+C\+A\+N\+A\+RY}}(stk)))) !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk)) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b}{E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\}) for(int i=stk-\/$>$size;i$<$ stk-\/$>$capacity;i++)\{ \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}\mbox{[}i\mbox{]} !=\mbox{\hyperlink{header_8h_ab960bda823c2f3833e70e8832a064ae4}{P\+O\+I\+S\+ON}})\{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa}{E\+R\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+E\+L\+E\+M\+\_\+\+I\+S\+N\+T\+\_\+\+P\+O\+I\+S\+O\+N\+ED}};\} \} \} \} void \mbox{\hyperlink{header_8h_acd6712a68337b8e5b1f255b0be40e84e}{stack\+Dump}}(const \mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, const char $\ast$func\+\_\+name, const char $\ast$stack\+\_\+name) \{ fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}Stack $<$$>$ adress\mbox{[}\%p\mbox{]} \textbackslash{}\char`\"{}\%s\textbackslash{}\char`\"{} at \%s\textbackslash{}n\char`\"{}, stk, stack\+\_\+name, func\+\_\+name);fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n\char`\"{});fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}S\+T\+A\+T\+US = \%16s\textbackslash{}n\char`\"{} \char`\"{}stack size = \%12d\textbackslash{}n\char`\"{} \char`\"{}stack capacity = \%8d\textbackslash{}n\char`\"{} \char`\"{}\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}} \mbox{[}\%p\mbox{]}\textbackslash{}n\char`\"{},(stk-\/$>$status==\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59}{OK}}) ? \char`\"{}OK\char`\"{} \+:\char`\"{}B\+R\+O\+K\+EN\char`\"{}, stk-\/$>$size, stk-\/$>$capacity, stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}});\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$status)\{ \mbox{\hyperlink{header_8h_a088f94b5422d72b3aa4a15456bfdf757}{print\+Error}}(stk-\/$>$status);fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}\textbackslash{}n\char`\"{});\} else \{ for(int i=0;i$<$ stk-\/$>$size;i++)\{ fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}$\ast$data\mbox{[}\%d\mbox{]} = \%d\textbackslash{}n\char`\"{}, i, stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}\mbox{[}i\mbox{]});\} for(int i=stk-\/$>$size;i$<$ stk-\/$>$capacity;i++)\{ fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}$\ast$data\mbox{[}\%d\mbox{]} = \%X\textbackslash{}n\char`\"{}, i, stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}\mbox{[}i\mbox{]});\} \} fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n\textbackslash{}n\textbackslash{}n\char`\"{});fflush(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}});\}) static int \mbox{\hyperlink{functions_8cpp_a525d034bef0995c4709388f2c07fda5b}{Mem\+Cpy}}(void $\ast$destination
+\item 
+\mbox{\hyperlink{functions_8cpp_a188e76edbd48bf23989dd769d2f36b33}{while}} (\mbox{\hyperlink{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}{element\+\_\+size}} $>$=16)
+\item 
+\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}} (\mbox{\hyperlink{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}{element\+\_\+size}}==1)
+\item 
+\mbox{\hyperlink{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}{is\+\_\+debug\+\_\+lvl\+\_\+1}} (static unsigned int \mbox{\hyperlink{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}{hash\+Calc}}(\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk) \{ stk-\/$>$hash=0;stk-\/$>$hash=\mbox{\hyperlink{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}{Murmur\+Hash2}}((char $\ast$) stk, sizeof(\mbox{\hyperlink{struct_stack}{Stack}}))+\mbox{\hyperlink{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}{Murmur\+Hash2}}((char $\ast$) stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}, 2 $\ast$sizeof(u\+\_\+int64\+\_\+t)+stk-\/$>$capacity $\ast$sizeof(\mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}}));\mbox{\hyperlink{functions_8cpp_a9717e7bbecb906637e86cef6da3d83c2}{return}} stk-\/$>$hash;\}) static unsigned int \mbox{\hyperlink{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}{Murmur\+Hash2}}(char $\ast$key
+\item 
+\mbox{\hyperlink{functions_8cpp_a64f0022bc70db27ccc65367797123ff3}{while}} (\mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}} $>$=4)
+\item 
+\mbox{\hyperlink{functions_8cpp_a8da4890815138313c5d17be035a9a4da}{switch}} (\mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}})
+\item 
+\mbox{\hyperlink{functions_8cpp_a6bf8cc6b1b0e32da797565b749c68bf6}{is\+\_\+debug\+\_\+lvl\+\_\+0}} (void \mbox{\hyperlink{header_8h_a088f94b5422d72b3aa4a15456bfdf757}{print\+Error}}(int \mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}}) \{ \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&1) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+C\+A\+L\+L\+I\+N\+G\+\_\+\+F\+U\+N\+C\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 1)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+R\+Y\+\_\+\+C\+R\+E\+A\+T\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 2)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+E\+L\+E\+M\+\_\+\+I\+S\+N\+T\+\_\+\+P\+O\+I\+S\+O\+N\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 3)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+C\+A\+P\+A\+C\+I\+TY \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 4)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+P\+O\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+S\+T\+A\+CK \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 5)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 6)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 7)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+W\+R\+O\+N\+G\+\_\+\+H\+A\+SH \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 8)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+TR \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 9)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+E\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 10)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+P\+U\+S\+H\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 11)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+C\+L\+E\+A\+N\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 12)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 13)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 14)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+E\+S\+I\+Z\+E\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 15)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+P\+O\+P\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 16)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+D\+U\+M\+P\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 17)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+B\+R\+O\+K\+EN \char`\"{});\}) is\+\_\+debug\+\_\+lvl\+\_\+1(static void \mbox{\hyperlink{functions_8cpp_a998d753a65bac51b0cdf8b501756bb62}{set\+Canary}}(\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk
+\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}
+\item 
+void $\ast$ \mbox{\hyperlink{functions_8cpp_a6be0202d766384de889755c765e80e12}{sourse}}
+\item 
+void int \mbox{\hyperlink{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}{element\+\_\+size}}
+\item 
+char $\ast$ \mbox{\hyperlink{functions_8cpp_a959c2e4a02db5d5fb4534b2462e825db}{srs}} = (char$\ast$) \mbox{\hyperlink{functions_8cpp_a6be0202d766384de889755c765e80e12}{sourse}}
+\item 
+\mbox{\hyperlink{functions_8cpp_a9717e7bbecb906637e86cef6da3d83c2}{return}}
+\item 
+unsigned int \mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}}
+\item 
+const unsigned int \mbox{\hyperlink{functions_8cpp_ab25cb8b96357984d0b18ca1798489429}{seed}} = 0
+\item 
+const int \mbox{\hyperlink{functions_8cpp_aab1a61aefa4f95e20603bbf888cb2a5f}{r}} = 24
+\item 
+unsigned int \mbox{\hyperlink{functions_8cpp_ae29fb3733901031f1a69e5ddafd04c6f}{h}} = \mbox{\hyperlink{functions_8cpp_ab25cb8b96357984d0b18ca1798489429}{seed}} $^\wedge$ \mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}}
+\item 
+const unsigned char $\ast$ \mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}} = (const unsigned char$\ast$) key
+\item 
+unsigned int \mbox{\hyperlink{functions_8cpp_a90e096a39cfc6da042e02d27a346f2d3}{k}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}\label{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}} 
+\index{functions.cpp@{functions.cpp}!hashCalc@{hashCalc}}
+\index{hashCalc@{hashCalc}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{hashCalc()}{hashCalc()}}
+{\footnotesize\ttfamily static unsigned int hash\+Calc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция подсчета хеша 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}\label{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}} 
+\index{functions.cpp@{functions.cpp}!if@{if}}
+\index{if@{if}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}{element\+\_\+size}}}]{ = {\ttfamily =~1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8cpp_a6bf8cc6b1b0e32da797565b749c68bf6}\label{functions_8cpp_a6bf8cc6b1b0e32da797565b749c68bf6}} 
+\index{functions.cpp@{functions.cpp}!is\_debug\_lvl\_0@{is\_debug\_lvl\_0}}
+\index{is\_debug\_lvl\_0@{is\_debug\_lvl\_0}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_debug\_lvl\_0()}{is\_debug\_lvl\_0()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily is\+\_\+debug\+\_\+lvl\+\_\+0 (\begin{DoxyParamCaption}\item[{void \mbox{\hyperlink{header_8h_a088f94b5422d72b3aa4a15456bfdf757}{print\+Error}}(int \mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}}) \{ \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&1) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+C\+A\+L\+L\+I\+N\+G\+\_\+\+F\+U\+N\+C\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 1)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+R\+Y\+\_\+\+C\+R\+E\+A\+T\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 2)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+E\+L\+E\+M\+\_\+\+I\+S\+N\+T\+\_\+\+P\+O\+I\+S\+O\+N\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 3)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+C\+A\+P\+A\+C\+I\+TY \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 4)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+P\+O\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+S\+T\+A\+CK \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 5)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 6)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 7)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+W\+R\+O\+N\+G\+\_\+\+H\+A\+SH \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 8)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+TR \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 9)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+E\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 10)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+P\+U\+S\+H\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 11)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+C\+L\+E\+A\+N\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 12)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 13)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 14)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+R\+E\+S\+I\+Z\+E\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 15)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+P\+O\+P\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 16)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+D\+U\+M\+P\+\_\+\+F\+A\+I\+L\+ED \char`\"{});if(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5}{Error}} \&(1$<$$<$ 17)) fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+B\+R\+O\+K\+EN \char`\"{});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8cpp_ab6a7f118acbb3bf426cc42b327cba415}\label{functions_8cpp_ab6a7f118acbb3bf426cc42b327cba415}} 
+\index{functions.cpp@{functions.cpp}!is\_debug\_lvl\_0@{is\_debug\_lvl\_0}}
+\index{is\_debug\_lvl\_0@{is\_debug\_lvl\_0}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_debug\_lvl\_0()}{is\_debug\_lvl\_0()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily is\+\_\+debug\+\_\+lvl\+\_\+0 (\begin{DoxyParamCaption}\item[{void \mbox{\hyperlink{header_8h_a568829cc5c0b0bba47ec1c7b2ef8dcc1}{verify\+Stack}}(\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk)\{ \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}==(\mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}} $\ast$) 0x\+B\+E\+BE) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797}{E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+C\+L\+E\+A\+N\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$status \&(\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797}{E\+R\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+C\+L\+E\+A\+N\+ED}})==0)\{ \mbox{\hyperlink{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}{is\+\_\+debug\+\_\+lvl\+\_\+1}}(\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$hash !=\mbox{\hyperlink{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}{hash\+Calc}}(stk)) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382}{E\+R\+R\+\_\+\+W\+R\+O\+N\+G\+\_\+\+H\+A\+SH}};\}) \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$size $>$ stk-\/$>$capacity) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9}{E\+R\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+C\+A\+P\+A\+C\+I\+TY}};\} \mbox{\hyperlink{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}{is\+\_\+debug\+\_\+lvl\+\_\+1}}(\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$egg !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk)) \{ printf(\char`\"{}stk-\/$>$egg -\/-\/-\/-\/ \%lu\textbackslash{}n\char`\"{}, stk-\/$>$egg);stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a}{E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$chicken !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk)) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b}{E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(($\ast$((u\+\_\+int64\+\_\+t $\ast$)(\mbox{\hyperlink{header_8h_a97b16530da162b627bb2b2efcbbdde15}{L\+E\+F\+T\+\_\+\+C\+A\+N\+A\+RY}}(stk)))) !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk))\{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae}{E\+R\+R\+\_\+\+L\+E\+F\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\} \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(($\ast$((u\+\_\+int64\+\_\+t $\ast$)(\mbox{\hyperlink{header_8h_af6ad00c25b54f2a22d02309bb816235d}{R\+I\+G\+H\+T\+\_\+\+C\+A\+N\+A\+RY}}(stk)))) !=\mbox{\hyperlink{header_8h_a9bfbf1457a1d51bcb336ab266a01c683}{C\+A\+N\+A\+RY}}(stk)) \{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b}{E\+R\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+D\+A\+T\+A\+C\+A\+N\+A\+R\+Y\+\_\+\+D\+A\+M\+A\+G\+ED}};\}) for(int i=stk-\/$>$size;i$<$ stk-\/$>$capacity;i++)\{ \mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}\mbox{[}i\mbox{]} !=\mbox{\hyperlink{header_8h_ab960bda823c2f3833e70e8832a064ae4}{P\+O\+I\+S\+ON}})\{ stk-\/$>$status$\vert$=\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa}{E\+R\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+E\+L\+E\+M\+\_\+\+I\+S\+N\+T\+\_\+\+P\+O\+I\+S\+O\+N\+ED}};\} \} \} \} void \mbox{\hyperlink{header_8h_acd6712a68337b8e5b1f255b0be40e84e}{stack\+Dump}}(const \mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk, const char $\ast$func\+\_\+name, const char $\ast$stack\+\_\+name) \{ fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}Stack $<$$>$ adress\mbox{[}\%p\mbox{]} \textbackslash{}\char`\"{}\%s\textbackslash{}\char`\"{} at \%s\textbackslash{}n\char`\"{}, stk, stack\+\_\+name, func\+\_\+name);fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n\char`\"{});fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}S\+T\+A\+T\+US = \%16s\textbackslash{}n\char`\"{} \char`\"{}stack size = \%12d\textbackslash{}n\char`\"{} \char`\"{}stack capacity = \%8d\textbackslash{}n\char`\"{} \char`\"{}\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}} \mbox{[}\%p\mbox{]}\textbackslash{}n\char`\"{},(stk-\/$>$status==\mbox{\hyperlink{header_8h_a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59}{OK}}) ? \char`\"{}OK\char`\"{} \+:\char`\"{}B\+R\+O\+K\+EN\char`\"{}, stk-\/$>$size, stk-\/$>$capacity, stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}});\mbox{\hyperlink{functions_8cpp_adde92fb9977d6a2691b9e51408acaf2b}{if}}(stk-\/$>$status)\{ \mbox{\hyperlink{header_8h_a088f94b5422d72b3aa4a15456bfdf757}{print\+Error}}(stk-\/$>$status);fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}\textbackslash{}n\char`\"{});\} else \{ for(int i=0;i$<$ stk-\/$>$size;i++)\{ fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}$\ast$data\mbox{[}\%d\mbox{]} = \%d\textbackslash{}n\char`\"{}, i, stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}\mbox{[}i\mbox{]});\} for(int i=stk-\/$>$size;i$<$ stk-\/$>$capacity;i++)\{ fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}$\ast$data\mbox{[}\%d\mbox{]} = \%X\textbackslash{}n\char`\"{}, i, stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}\mbox{[}i\mbox{]});\} \} fprintf(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}}, \char`\"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n\textbackslash{}n\textbackslash{}n\char`\"{});fflush(\mbox{\hyperlink{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}{logs}});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}\label{functions_8cpp_ae1cb03ca8a148224b698da5bd71e2ef5}} 
+\index{functions.cpp@{functions.cpp}!is\_debug\_lvl\_1@{is\_debug\_lvl\_1}}
+\index{is\_debug\_lvl\_1@{is\_debug\_lvl\_1}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_debug\_lvl\_1()}{is\_debug\_lvl\_1()}}
+{\footnotesize\ttfamily is\+\_\+debug\+\_\+lvl\+\_\+1 (\begin{DoxyParamCaption}\item[{static unsigned int \mbox{\hyperlink{functions_8cpp_af9d44eef0028d487971eea57ecb9351e}{hash\+Calc}}(\mbox{\hyperlink{struct_stack}{Stack}} $\ast$stk) \{ stk-\/$>$hash=0;stk-\/$>$hash=\mbox{\hyperlink{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}{Murmur\+Hash2}}((char $\ast$) stk, sizeof(\mbox{\hyperlink{struct_stack}{Stack}}))+\mbox{\hyperlink{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}{Murmur\+Hash2}}((char $\ast$) stk-\/$>$\mbox{\hyperlink{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}{data}}, 2 $\ast$sizeof(u\+\_\+int64\+\_\+t)+stk-\/$>$capacity $\ast$sizeof(\mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}}));\mbox{\hyperlink{functions_8cpp_a9717e7bbecb906637e86cef6da3d83c2}{return}} stk-\/$>$hash;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8cpp_a525d034bef0995c4709388f2c07fda5b}\label{functions_8cpp_a525d034bef0995c4709388f2c07fda5b}} 
+\index{functions.cpp@{functions.cpp}!MemCpy@{MemCpy}}
+\index{MemCpy@{MemCpy}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{MemCpy()}{MemCpy()}}
+{\footnotesize\ttfamily static int Mem\+Cpy (\begin{DoxyParamCaption}\item[{void $\ast$}]{destination,  }\item[{void $\ast$}]{sourse,  }\item[{int}]{element\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция копирования памяти 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}void$\ast$\mbox{]}destination} & Место, куда надо записать данные \\
+\hline
+{\em \mbox{[}void$\ast$\mbox{]}sourse} & Место, откуда надо взять данные \\
+\hline
+{\em \mbox{[}int\mbox{]}element\+\_\+siez} & размер элемента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}\label{functions_8cpp_a8c885028ca244f78a98fd4073fdceb3f}} 
+\index{functions.cpp@{functions.cpp}!MurmurHash2@{MurmurHash2}}
+\index{MurmurHash2@{MurmurHash2}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{MurmurHash2()}{MurmurHash2()}}
+{\footnotesize\ttfamily static unsigned int Murmur\+Hash2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{key,  }\item[{unsigned int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция посчет хеша по алгоритму Murmur\+Hash2. 
+
+\mbox{\Hypertarget{functions_8cpp_a998d753a65bac51b0cdf8b501756bb62}\label{functions_8cpp_a998d753a65bac51b0cdf8b501756bb62}} 
+\index{functions.cpp@{functions.cpp}!setCanary@{setCanary}}
+\index{setCanary@{setCanary}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{setCanary()}{setCanary()}}
+{\footnotesize\ttfamily static void set\+Canary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk,  }\item[{int}]{is\+\_\+left }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция установки левой или правой канарейки для data. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+{\em \mbox{[}int\mbox{]}is\+\_\+left} & 1, если надо установить левую канарейку, !1 -- если правую \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8cpp_a749ee7148ef942626518dbe86c790887}\label{functions_8cpp_a749ee7148ef942626518dbe86c790887}} 
+\index{functions.cpp@{functions.cpp}!stackCtor@{stackCtor}}
+\index{stackCtor@{stackCtor}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{stackCtor()}{stackCtor()}}
+{\footnotesize\ttfamily int stack\+Ctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Функция создания стека 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+{\em \mbox{[}int\mbox{]}capacity} & Емкость стека \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a56bc7076d4bb9970b4aba173c178cc99}\label{functions_8cpp_a56bc7076d4bb9970b4aba173c178cc99}} 
+\index{functions.cpp@{functions.cpp}!stackDtor@{stackDtor}}
+\index{stackDtor@{stackDtor}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{stackDtor()}{stackDtor()}}
+{\footnotesize\ttfamily int stack\+Dtor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk }\end{DoxyParamCaption})}
+
+
+
+Функция уничтожения стека 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a1f7bc09af4810b852177adbbefef019e}\label{functions_8cpp_a1f7bc09af4810b852177adbbefef019e}} 
+\index{functions.cpp@{functions.cpp}!stackPop@{stackPop}}
+\index{stackPop@{stackPop}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{stackPop()}{stackPop()}}
+{\footnotesize\ttfamily int stack\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk,  }\item[{\mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}} $\ast$}]{param }\end{DoxyParamCaption})}
+
+
+
+Функция извлечения элемента 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+{\em \mbox{[}type$\ast$\mbox{]}param} & Указатель, куда должен быть извлечен элемент \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_ae09b7d22b483db340d588790d66dda27}\label{functions_8cpp_ae09b7d22b483db340d588790d66dda27}} 
+\index{functions.cpp@{functions.cpp}!stackPush@{stackPush}}
+\index{stackPush@{stackPush}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{stackPush()}{stackPush()}}
+{\footnotesize\ttfamily int stack\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk,  }\item[{\mbox{\hyperlink{header_8h_a53155e22eaa05190346890241be3367c}{type}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Функция добавления элемента в стек 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+{\em \mbox{[}type\mbox{]}value} & Значение добавляемого элемента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_acd47efcfe6496ccb3b8bf2a58d3f7260}\label{functions_8cpp_acd47efcfe6496ccb3b8bf2a58d3f7260}} 
+\index{functions.cpp@{functions.cpp}!stackResize@{stackResize}}
+\index{stackResize@{stackResize}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{stackResize()}{stackResize()}}
+{\footnotesize\ttfamily static int stack\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stk,  }\item[{int}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Функция изменения емкости стека 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \mbox{[}\+Stack$\ast$\mbox{]}stk} & Указатель на стек \\
+\hline
+{\em \mbox{[}int\mbox{]}upper} & 1, если требуется увеличить емкость, 0 -- если нужно уменьшить емкость \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 или код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a8da4890815138313c5d17be035a9a4da}\label{functions_8cpp_a8da4890815138313c5d17be035a9a4da}} 
+\index{functions.cpp@{functions.cpp}!switch@{switch}}
+\index{switch@{switch}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{switch()}{switch()}}
+{\footnotesize\ttfamily switch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8cpp_a188e76edbd48bf23989dd769d2f36b33}\label{functions_8cpp_a188e76edbd48bf23989dd769d2f36b33}} 
+\index{functions.cpp@{functions.cpp}!while@{while}}
+\index{while@{while}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{while()}{while()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily while (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}{element\+\_\+size}} $>$=}]{16 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions_8cpp_a64f0022bc70db27ccc65367797123ff3}\label{functions_8cpp_a64f0022bc70db27ccc65367797123ff3}} 
+\index{functions.cpp@{functions.cpp}!while@{while}}
+\index{while@{while}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{while()}{while()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily while (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}} $>$=}]{4 }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}\label{functions_8cpp_afb8a18b1a8a5a679a5c4bbb52769b49e}} 
+\index{functions.cpp@{functions.cpp}!data@{data}}
+\index{data@{data}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily const unsigned char$\ast$ data = (const unsigned char$\ast$) key}
+
+\mbox{\Hypertarget{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}\label{functions_8cpp_a96c625e0a3d3e919cac1cb359f29ebc0}} 
+\index{functions.cpp@{functions.cpp}!element\_size@{element\_size}}
+\index{element\_size@{element\_size}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{element\_size}{element\_size}}
+{\footnotesize\ttfamily void int element\+\_\+size}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordtype}{char}* dest = (\textcolor{keywordtype}{char}*) destination}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{functions_8cpp_ae29fb3733901031f1a69e5ddafd04c6f}\label{functions_8cpp_ae29fb3733901031f1a69e5ddafd04c6f}} 
+\index{functions.cpp@{functions.cpp}!h@{h}}
+\index{h@{h}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily \mbox{\hyperlink{functions_8cpp_a9717e7bbecb906637e86cef6da3d83c2}{return}} h = \mbox{\hyperlink{functions_8cpp_ab25cb8b96357984d0b18ca1798489429}{seed}} $^\wedge$ \mbox{\hyperlink{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}{len}}}
+
+\mbox{\Hypertarget{functions_8cpp_a90e096a39cfc6da042e02d27a346f2d3}\label{functions_8cpp_a90e096a39cfc6da042e02d27a346f2d3}} 
+\index{functions.cpp@{functions.cpp}!k@{k}}
+\index{k@{k}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily unsigned int k = 0}
+
+\mbox{\Hypertarget{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}\label{functions_8cpp_a77124bd5f7e31e6fffc19f335da0c23f}} 
+\index{functions.cpp@{functions.cpp}!len@{len}}
+\index{len@{len}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{len}{len}}
+{\footnotesize\ttfamily unsigned int len}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} m = 0x5BD1E995}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}\label{functions_8cpp_a44deb9fa59c12e3147ffd8d53775eb47}} 
+\index{functions.cpp@{functions.cpp}!logs@{logs}}
+\index{logs@{logs}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{logs}{logs}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ logs}
+
+\mbox{\Hypertarget{functions_8cpp_aab1a61aefa4f95e20603bbf888cb2a5f}\label{functions_8cpp_aab1a61aefa4f95e20603bbf888cb2a5f}} 
+\index{functions.cpp@{functions.cpp}!r@{r}}
+\index{r@{r}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily const int r = 24}
+
+\mbox{\Hypertarget{functions_8cpp_a9717e7bbecb906637e86cef6da3d83c2}\label{functions_8cpp_a9717e7bbecb906637e86cef6da3d83c2}} 
+\index{functions.cpp@{functions.cpp}!return@{return}}
+\index{return@{return}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{return}{return}}
+{\footnotesize\ttfamily return}
+
+\mbox{\Hypertarget{functions_8cpp_ab25cb8b96357984d0b18ca1798489429}\label{functions_8cpp_ab25cb8b96357984d0b18ca1798489429}} 
+\index{functions.cpp@{functions.cpp}!seed@{seed}}
+\index{seed@{seed}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily const unsigned int seed = 0}
+
+\mbox{\Hypertarget{functions_8cpp_a6be0202d766384de889755c765e80e12}\label{functions_8cpp_a6be0202d766384de889755c765e80e12}} 
+\index{functions.cpp@{functions.cpp}!sourse@{sourse}}
+\index{sourse@{sourse}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{sourse}{sourse}}
+{\footnotesize\ttfamily void$\ast$ sourse}
+
+\mbox{\Hypertarget{functions_8cpp_a959c2e4a02db5d5fb4534b2462e825db}\label{functions_8cpp_a959c2e4a02db5d5fb4534b2462e825db}} 
+\index{functions.cpp@{functions.cpp}!srs@{srs}}
+\index{srs@{srs}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{srs}{srs}}
+{\footnotesize\ttfamily char$\ast$ srs = (char$\ast$) \mbox{\hyperlink{functions_8cpp_a6be0202d766384de889755c765e80e12}{sourse}}}
+

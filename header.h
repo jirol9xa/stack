@@ -16,7 +16,7 @@
 #endif
 
 #define type int
-#define DEBUG_LVL 0
+#define DEBUG_LVL 3
 const type POISON = 0xDEAD; 
 
 /*
@@ -125,13 +125,53 @@ struct Stack
     ) 
 };
 
-/*
-    доки?
+/*!
+    \brief  Функция создания стека
+    \param  [Stack*]stk Указатель на стек
+    \param  [int]capacity Емкость стека
+    \return 0 или код ошибки
 */
 int stackCtor(Stack* stk, int capacity);
+
+/*!
+    \brief  Функция уничтожения стека
+    \param  [Stack*]stk Указатель на стек
+    \return 0 или код ошибки
+*/
 int stackDtor(Stack* stk);
+
+/*!
+    \brief  Функция добавления элемента в стек
+    \param  [Stack*]stk Указатель на стек
+    \param  [type]value Значение добавляемого
+            элемента
+    \return 0 или код ошибки
+*/
 int stackPush(Stack* stk, type value);
+
+/*!
+    \brief  Функция извлечения элемента
+    \param  [Stack*]stk Указатель на стек
+    \param  [type*]param Указатель, куда
+            должен быть извлечен элемент
+    \return 0 или код ошибки
+*/
 type stackPop(Stack* stk, type* param);
+
+/*!
+    \brief  Функция вывода информации о
+            стеке и функции, которая его
+            вызвала
+*/
 void stackDump(const Stack* stk, const char* func_name, const char* stack_name);
+
+/*!
+    \brief  Функция проверки стека на
+            корректность
+*/
 void verifyStack(Stack* stk);
+
+/*!
+    \brief  Функция печати ошибок
+*/
 void printError(int Error);

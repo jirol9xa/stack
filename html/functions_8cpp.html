@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Stack: Файл functions.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл functions.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="header_8h_source.html">header.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для functions.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="functions_8cpp__incl.png" border="0" usemap="#functions_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:acd47efcfe6496ccb3b8bf2a58d3f7260"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#acd47efcfe6496ccb3b8bf2a58d3f7260">stackResize</a> (<a class="el" href="struct_stack.html">Stack</a> *stk, int upper)</td></tr>
+<tr class="memdesc:acd47efcfe6496ccb3b8bf2a58d3f7260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения емкости стека  <a href="functions_8cpp.html#acd47efcfe6496ccb3b8bf2a58d3f7260">Подробнее...</a><br /></td></tr>
+<tr class="separator:acd47efcfe6496ccb3b8bf2a58d3f7260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525d034bef0995c4709388f2c07fda5b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a525d034bef0995c4709388f2c07fda5b">MemCpy</a> (void *destination, void *<a class="el" href="functions_8cpp.html#a6be0202d766384de889755c765e80e12">sourse</a>, int <a class="el" href="functions_8cpp.html#a96c625e0a3d3e919cac1cb359f29ebc0">element_size</a>)</td></tr>
+<tr class="memdesc:a525d034bef0995c4709388f2c07fda5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция копирования памяти  <a href="functions_8cpp.html#a525d034bef0995c4709388f2c07fda5b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a525d034bef0995c4709388f2c07fda5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d44eef0028d487971eea57ecb9351e"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#af9d44eef0028d487971eea57ecb9351e">hashCalc</a> (<a class="el" href="struct_stack.html">Stack</a> *stk)</td></tr>
+<tr class="memdesc:af9d44eef0028d487971eea57ecb9351e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция подсчета хеша  <a href="functions_8cpp.html#af9d44eef0028d487971eea57ecb9351e">Подробнее...</a><br /></td></tr>
+<tr class="separator:af9d44eef0028d487971eea57ecb9351e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c885028ca244f78a98fd4073fdceb3f"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">MurmurHash2</a> (char *key, unsigned int <a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a>)</td></tr>
+<tr class="memdesc:a8c885028ca244f78a98fd4073fdceb3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция посчет хеша по алгоритму MurmurHash2.  <a href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c885028ca244f78a98fd4073fdceb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998d753a65bac51b0cdf8b501756bb62"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a998d753a65bac51b0cdf8b501756bb62">setCanary</a> (<a class="el" href="struct_stack.html">Stack</a> *stk, int is_left)</td></tr>
+<tr class="memdesc:a998d753a65bac51b0cdf8b501756bb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция установки левой или правой канарейки для data.  <a href="functions_8cpp.html#a998d753a65bac51b0cdf8b501756bb62">Подробнее...</a><br /></td></tr>
+<tr class="separator:a998d753a65bac51b0cdf8b501756bb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749ee7148ef942626518dbe86c790887"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a749ee7148ef942626518dbe86c790887">stackCtor</a> (<a class="el" href="struct_stack.html">Stack</a> *stk, int capacity)</td></tr>
+<tr class="memdesc:a749ee7148ef942626518dbe86c790887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания стека  <a href="functions_8cpp.html#a749ee7148ef942626518dbe86c790887">Подробнее...</a><br /></td></tr>
+<tr class="separator:a749ee7148ef942626518dbe86c790887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bc7076d4bb9970b4aba173c178cc99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a56bc7076d4bb9970b4aba173c178cc99">stackDtor</a> (<a class="el" href="struct_stack.html">Stack</a> *stk)</td></tr>
+<tr class="memdesc:a56bc7076d4bb9970b4aba173c178cc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция уничтожения стека  <a href="functions_8cpp.html#a56bc7076d4bb9970b4aba173c178cc99">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56bc7076d4bb9970b4aba173c178cc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09b7d22b483db340d588790d66dda27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ae09b7d22b483db340d588790d66dda27">stackPush</a> (<a class="el" href="struct_stack.html">Stack</a> *stk, <a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> value)</td></tr>
+<tr class="memdesc:ae09b7d22b483db340d588790d66dda27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления элемента в стек  <a href="functions_8cpp.html#ae09b7d22b483db340d588790d66dda27">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae09b7d22b483db340d588790d66dda27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7bc09af4810b852177adbbefef019e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a1f7bc09af4810b852177adbbefef019e">stackPop</a> (<a class="el" href="struct_stack.html">Stack</a> *stk, <a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> *param)</td></tr>
+<tr class="memdesc:a1f7bc09af4810b852177adbbefef019e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция извлечения элемента  <a href="functions_8cpp.html#a1f7bc09af4810b852177adbbefef019e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1f7bc09af4810b852177adbbefef019e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a7f118acbb3bf426cc42b327cba415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ab6a7f118acbb3bf426cc42b327cba415">is_debug_lvl_0</a> (void <a class="el" href="header_8h.html#a568829cc5c0b0bba47ec1c7b2ef8dcc1">verifyStack</a>(<a class="el" href="struct_stack.html">Stack</a> *stk){ <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>==(<a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> *) 0xBEBE) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">ERR_STACK_ALREADY_CLEANED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;status &amp;(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">ERR_STACK_ALREADY_CLEANED</a>)==0){ <a class="el" href="functions_8cpp.html#ae1cb03ca8a148224b698da5bd71e2ef5">is_debug_lvl_1</a>(<a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;hash !=<a class="el" href="functions_8cpp.html#af9d44eef0028d487971eea57ecb9351e">hashCalc</a>(stk)) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382">ERR_WRONG_HASH</a>;}) <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;size &gt; stk-&gt;capacity) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9">ERR_SIZE_GREATER_CAPACITY</a>;} <a class="el" href="functions_8cpp.html#ae1cb03ca8a148224b698da5bd71e2ef5">is_debug_lvl_1</a>(<a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;egg !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)) { printf(&quot;stk-&gt;egg ---- %lu\n&quot;, stk-&gt;egg);stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a">ERR_LEFT_CANARY_DAMAGED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;chicken !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b">ERR_RIGHT_CANARY_DAMAGED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>((*((u_int64_t *)(<a class="el" href="header_8h.html#a97b16530da162b627bb2b2efcbbdde15">LEFT_CANARY</a>(stk)))) !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)){ stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae">ERR_LEFT_DATACANARY_DAMAGED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>((*((u_int64_t *)(<a class="el" href="header_8h.html#af6ad00c25b54f2a22d02309bb816235d">RIGHT_CANARY</a>(stk)))) !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b">ERR_RIGHT_DATACANARY_DAMAGED</a>;}) for(int i=stk-&gt;size;i&lt; stk-&gt;capacity;i++){ <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>[i] !=<a class="el" href="header_8h.html#ab960bda823c2f3833e70e8832a064ae4">POISON</a>){ stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa">ERR_EMPTY_ELEM_ISNT_POISONED</a>;} } } } void <a class="el" href="header_8h.html#acd6712a68337b8e5b1f255b0be40e84e">stackDump</a>(const <a class="el" href="struct_stack.html">Stack</a> *stk, const char *func_name, const char *stack_name) { fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;Stack &lt;&gt; adress[%p] \&quot;%s\&quot; at %s\n&quot;, stk, stack_name, func_name);fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;---------------------------------------------------------------------------------\n&quot;);fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;STATUS = %16s\n&quot; &quot;stack size = %12d\n&quot; &quot;stack capacity = %8d\n&quot; &quot;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a> [%p]\n&quot;,(stk-&gt;status==<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a>) ? &quot;OK&quot; :&quot;BROKEN&quot;, stk-&gt;size, stk-&gt;capacity, stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>);<a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;status){ <a class="el" href="header_8h.html#a088f94b5422d72b3aa4a15456bfdf757">printError</a>(stk-&gt;status);fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;\n&quot;);} else { for(int i=0;i&lt; stk-&gt;size;i++){ fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;*data[%d] = %d\n&quot;, i, stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>[i]);} for(int i=stk-&gt;size;i&lt; stk-&gt;capacity;i++){ fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;*data[%d] = %X\n&quot;, i, stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>[i]);} } fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;---------------------------------------------------------------------------------\n\n\n&quot;);fflush(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>);}) static int <a class="el" href="functions_8cpp.html#a525d034bef0995c4709388f2c07fda5b">MemCpy</a>(void *destination</td></tr>
+<tr class="separator:ab6a7f118acbb3bf426cc42b327cba415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188e76edbd48bf23989dd769d2f36b33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a188e76edbd48bf23989dd769d2f36b33">while</a> (<a class="el" href="functions_8cpp.html#a96c625e0a3d3e919cac1cb359f29ebc0">element_size</a> &gt;=16)</td></tr>
+<tr class="separator:a188e76edbd48bf23989dd769d2f36b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde92fb9977d6a2691b9e51408acaf2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a> (<a class="el" href="functions_8cpp.html#a96c625e0a3d3e919cac1cb359f29ebc0">element_size</a>==1)</td></tr>
+<tr class="separator:adde92fb9977d6a2691b9e51408acaf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cb03ca8a148224b698da5bd71e2ef5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ae1cb03ca8a148224b698da5bd71e2ef5">is_debug_lvl_1</a> (static unsigned int <a class="el" href="functions_8cpp.html#af9d44eef0028d487971eea57ecb9351e">hashCalc</a>(<a class="el" href="struct_stack.html">Stack</a> *stk) { stk-&gt;hash=0;stk-&gt;hash=<a class="el" href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">MurmurHash2</a>((char *) stk, sizeof(<a class="el" href="struct_stack.html">Stack</a>))+<a class="el" href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">MurmurHash2</a>((char *) stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>, 2 *sizeof(u_int64_t)+stk-&gt;capacity *sizeof(<a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a>));<a class="el" href="functions_8cpp.html#a9717e7bbecb906637e86cef6da3d83c2">return</a> stk-&gt;hash;}) static unsigned int <a class="el" href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">MurmurHash2</a>(char *key</td></tr>
+<tr class="separator:ae1cb03ca8a148224b698da5bd71e2ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f0022bc70db27ccc65367797123ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a64f0022bc70db27ccc65367797123ff3">while</a> (<a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a> &gt;=4)</td></tr>
+<tr class="separator:a64f0022bc70db27ccc65367797123ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da4890815138313c5d17be035a9a4da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a8da4890815138313c5d17be035a9a4da">switch</a> (<a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a>)</td></tr>
+<tr class="separator:a8da4890815138313c5d17be035a9a4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf8cc6b1b0e32da797565b749c68bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a6bf8cc6b1b0e32da797565b749c68bf6">is_debug_lvl_0</a> (void <a class="el" href="header_8h.html#a088f94b5422d72b3aa4a15456bfdf757">printError</a>(int <a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a>) { <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;1) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_CALLING_FUNC_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 1)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_STACK_ALREARY_CREATED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 2)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_EMPTY_ELEM_ISNT_POISONED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 3)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_SIZE_GREATER_CAPACITY &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 4)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_POP_EMPTY_STACK &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 5)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_RIGHT_CANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 6)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_LEFT_CANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 7)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_WRONG_HASH &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 8)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_INVALID_PTR &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 9)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_REALLOC_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 10)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_PUSH_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 11)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_STACK_ALREADY_CLEANED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 12)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_LEFT_DATACANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 13)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_RIGHT_DATACANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 14)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_RESIZE_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 15)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_POP_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 16)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_DUMP_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 17)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_STACK_BROKEN &quot;);}) is_debug_lvl_1(static void <a class="el" href="functions_8cpp.html#a998d753a65bac51b0cdf8b501756bb62">setCanary</a>(<a class="el" href="struct_stack.html">Stack</a> *stk</td></tr>
+<tr class="separator:a6bf8cc6b1b0e32da797565b749c68bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a44deb9fa59c12e3147ffd8d53775eb47"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a></td></tr>
+<tr class="separator:a44deb9fa59c12e3147ffd8d53775eb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be0202d766384de889755c765e80e12"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a6be0202d766384de889755c765e80e12">sourse</a></td></tr>
+<tr class="separator:a6be0202d766384de889755c765e80e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c625e0a3d3e919cac1cb359f29ebc0"><td class="memItemLeft" align="right" valign="top">void int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a96c625e0a3d3e919cac1cb359f29ebc0">element_size</a></td></tr>
+<tr class="separator:a96c625e0a3d3e919cac1cb359f29ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959c2e4a02db5d5fb4534b2462e825db"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a959c2e4a02db5d5fb4534b2462e825db">srs</a> = (char*) <a class="el" href="functions_8cpp.html#a6be0202d766384de889755c765e80e12">sourse</a></td></tr>
+<tr class="separator:a959c2e4a02db5d5fb4534b2462e825db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9717e7bbecb906637e86cef6da3d83c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a9717e7bbecb906637e86cef6da3d83c2">return</a></td></tr>
+<tr class="separator:a9717e7bbecb906637e86cef6da3d83c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77124bd5f7e31e6fffc19f335da0c23f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a></td></tr>
+<tr class="separator:a77124bd5f7e31e6fffc19f335da0c23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25cb8b96357984d0b18ca1798489429"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ab25cb8b96357984d0b18ca1798489429">seed</a> = 0</td></tr>
+<tr class="separator:ab25cb8b96357984d0b18ca1798489429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1a61aefa4f95e20603bbf888cb2a5f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#aab1a61aefa4f95e20603bbf888cb2a5f">r</a> = 24</td></tr>
+<tr class="separator:aab1a61aefa4f95e20603bbf888cb2a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29fb3733901031f1a69e5ddafd04c6f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ae29fb3733901031f1a69e5ddafd04c6f">h</a> = <a class="el" href="functions_8cpp.html#ab25cb8b96357984d0b18ca1798489429">seed</a> ^ <a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a></td></tr>
+<tr class="separator:ae29fb3733901031f1a69e5ddafd04c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8a18b1a8a5a679a5c4bbb52769b49e"><td class="memItemLeft" align="right" valign="top">const unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a> = (const unsigned char*) key</td></tr>
+<tr class="separator:afb8a18b1a8a5a679a5c4bbb52769b49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e096a39cfc6da042e02d27a346f2d3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a90e096a39cfc6da042e02d27a346f2d3">k</a> = 0</td></tr>
+<tr class="separator:a90e096a39cfc6da042e02d27a346f2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="af9d44eef0028d487971eea57ecb9351e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d44eef0028d487971eea57ecb9351e">&#9670;&nbsp;</a></span>hashCalc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int hashCalc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция подсчета хеша </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="adde92fb9977d6a2691b9e51408acaf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde92fb9977d6a2691b9e51408acaf2b">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8cpp.html#a96c625e0a3d3e919cac1cb359f29ebc0">element_size</a>&#160;</td>
+          <td class="paramname"> = <code>=&#160;1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bf8cc6b1b0e32da797565b749c68bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf8cc6b1b0e32da797565b749c68bf6">&#9670;&nbsp;</a></span>is_debug_lvl_0() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_debug_lvl_0 </td>
+          <td>(</td>
+          <td class="paramtype">void <a class="el" href="header_8h.html#a088f94b5422d72b3aa4a15456bfdf757">printError</a>(int <a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a>) { <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;1) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_CALLING_FUNC_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 1)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_STACK_ALREARY_CREATED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 2)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_EMPTY_ELEM_ISNT_POISONED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 3)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_SIZE_GREATER_CAPACITY &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 4)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_POP_EMPTY_STACK &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 5)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_RIGHT_CANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 6)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_LEFT_CANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 7)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_WRONG_HASH &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 8)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_INVALID_PTR &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 9)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_REALLOC_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 10)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_PUSH_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 11)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_STACK_ALREADY_CLEANED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 12)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_LEFT_DATACANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 13)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_RIGHT_DATACANARY_DAMAGED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 14)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_RESIZE_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 15)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_POP_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 16)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_DUMP_FAILED &quot;);if(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> &amp;(1&lt;&lt; 17)) fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;ERR_STACK_BROKEN &quot;);}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6a7f118acbb3bf426cc42b327cba415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a7f118acbb3bf426cc42b327cba415">&#9670;&nbsp;</a></span>is_debug_lvl_0() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_debug_lvl_0 </td>
+          <td>(</td>
+          <td class="paramtype">void <a class="el" href="header_8h.html#a568829cc5c0b0bba47ec1c7b2ef8dcc1">verifyStack</a>(<a class="el" href="struct_stack.html">Stack</a> *stk){ <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>==(<a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> *) 0xBEBE) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">ERR_STACK_ALREADY_CLEANED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;status &amp;(<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ae53ee6528d8c6af86894c56fcc087797">ERR_STACK_ALREADY_CLEANED</a>)==0){ <a class="el" href="functions_8cpp.html#ae1cb03ca8a148224b698da5bd71e2ef5">is_debug_lvl_1</a>(<a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;hash !=<a class="el" href="functions_8cpp.html#af9d44eef0028d487971eea57ecb9351e">hashCalc</a>(stk)) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5227a88463af5632d07daf3c95fc3382">ERR_WRONG_HASH</a>;}) <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;size &gt; stk-&gt;capacity) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5af8a60e623d36271d31d5e4fcdec80ca9">ERR_SIZE_GREATER_CAPACITY</a>;} <a class="el" href="functions_8cpp.html#ae1cb03ca8a148224b698da5bd71e2ef5">is_debug_lvl_1</a>(<a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;egg !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)) { printf(&quot;stk-&gt;egg ---- %lu\n&quot;, stk-&gt;egg);stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a8f235579e7be56412e254703ce44234a">ERR_LEFT_CANARY_DAMAGED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;chicken !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ab18a0620c132802f91edfa329d13ef7b">ERR_RIGHT_CANARY_DAMAGED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>((*((u_int64_t *)(<a class="el" href="header_8h.html#a97b16530da162b627bb2b2efcbbdde15">LEFT_CANARY</a>(stk)))) !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)){ stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ac88b1212b3a8808c38eeb788141c95ae">ERR_LEFT_DATACANARY_DAMAGED</a>;} <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>((*((u_int64_t *)(<a class="el" href="header_8h.html#af6ad00c25b54f2a22d02309bb816235d">RIGHT_CANARY</a>(stk)))) !=<a class="el" href="header_8h.html#a9bfbf1457a1d51bcb336ab266a01c683">CANARY</a>(stk)) { stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5adf829dde090269ef4f6a6b72beef3b8b">ERR_RIGHT_DATACANARY_DAMAGED</a>;}) for(int i=stk-&gt;size;i&lt; stk-&gt;capacity;i++){ <a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>[i] !=<a class="el" href="header_8h.html#ab960bda823c2f3833e70e8832a064ae4">POISON</a>){ stk-&gt;status|=<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a93756384fc855c085a25dee67b4999fa">ERR_EMPTY_ELEM_ISNT_POISONED</a>;} } } } void <a class="el" href="header_8h.html#acd6712a68337b8e5b1f255b0be40e84e">stackDump</a>(const <a class="el" href="struct_stack.html">Stack</a> *stk, const char *func_name, const char *stack_name) { fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;Stack &lt;&gt; adress[%p] \&quot;%s\&quot; at %s\n&quot;, stk, stack_name, func_name);fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;---------------------------------------------------------------------------------\n&quot;);fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;STATUS = %16s\n&quot; &quot;stack size = %12d\n&quot; &quot;stack capacity = %8d\n&quot; &quot;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a> [%p]\n&quot;,(stk-&gt;status==<a class="el" href="header_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a>) ? &quot;OK&quot; :&quot;BROKEN&quot;, stk-&gt;size, stk-&gt;capacity, stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>);<a class="el" href="functions_8cpp.html#adde92fb9977d6a2691b9e51408acaf2b">if</a>(stk-&gt;status){ <a class="el" href="header_8h.html#a088f94b5422d72b3aa4a15456bfdf757">printError</a>(stk-&gt;status);fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;\n&quot;);} else { for(int i=0;i&lt; stk-&gt;size;i++){ fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;*data[%d] = %d\n&quot;, i, stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>[i]);} for(int i=stk-&gt;size;i&lt; stk-&gt;capacity;i++){ fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;*data[%d] = %X\n&quot;, i, stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>[i]);} } fprintf(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>, &quot;---------------------------------------------------------------------------------\n\n\n&quot;);fflush(<a class="el" href="functions_8cpp.html#a44deb9fa59c12e3147ffd8d53775eb47">logs</a>);}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1cb03ca8a148224b698da5bd71e2ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1cb03ca8a148224b698da5bd71e2ef5">&#9670;&nbsp;</a></span>is_debug_lvl_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_debug_lvl_1 </td>
+          <td>(</td>
+          <td class="paramtype">static unsigned int <a class="el" href="functions_8cpp.html#af9d44eef0028d487971eea57ecb9351e">hashCalc</a>(<a class="el" href="struct_stack.html">Stack</a> *stk) { stk-&gt;hash=0;stk-&gt;hash=<a class="el" href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">MurmurHash2</a>((char *) stk, sizeof(<a class="el" href="struct_stack.html">Stack</a>))+<a class="el" href="functions_8cpp.html#a8c885028ca244f78a98fd4073fdceb3f">MurmurHash2</a>((char *) stk-&gt;<a class="el" href="functions_8cpp.html#afb8a18b1a8a5a679a5c4bbb52769b49e">data</a>, 2 *sizeof(u_int64_t)+stk-&gt;capacity *sizeof(<a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a>));<a class="el" href="functions_8cpp.html#a9717e7bbecb906637e86cef6da3d83c2">return</a> stk-&gt;hash;}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a525d034bef0995c4709388f2c07fda5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525d034bef0995c4709388f2c07fda5b">&#9670;&nbsp;</a></span>MemCpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int MemCpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>sourse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция копирования памяти </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[void*]destination</td><td>Место, куда надо записать данные </td></tr>
+    <tr><td class="paramname">[void*]sourse</td><td>Место, откуда надо взять данные </td></tr>
+    <tr><td class="paramname">[int]element_siez</td><td>размер элемента </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a8c885028ca244f78a98fd4073fdceb3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c885028ca244f78a98fd4073fdceb3f">&#9670;&nbsp;</a></span>MurmurHash2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int MurmurHash2 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция посчет хеша по алгоритму MurmurHash2. </p>
+
+</div>
+</div>
+<a id="a998d753a65bac51b0cdf8b501756bb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998d753a65bac51b0cdf8b501756bb62">&#9670;&nbsp;</a></span>setCanary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setCanary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_left</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция установки левой или правой канарейки для data. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+    <tr><td class="paramname">[int]is_left</td><td>1, если надо установить левую канарейку, !1 &ndash; если правую </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a749ee7148ef942626518dbe86c790887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749ee7148ef942626518dbe86c790887">&#9670;&nbsp;</a></span>stackCtor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stackCtor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция создания стека </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+    <tr><td class="paramname">[int]capacity</td><td>Емкость стека </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a56bc7076d4bb9970b4aba173c178cc99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56bc7076d4bb9970b4aba173c178cc99">&#9670;&nbsp;</a></span>stackDtor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stackDtor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция уничтожения стека </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a1f7bc09af4810b852177adbbefef019e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f7bc09af4810b852177adbbefef019e">&#9670;&nbsp;</a></span>stackPop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stackPop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a> *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция извлечения элемента </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+    <tr><td class="paramname">[type*]param</td><td>Указатель, куда должен быть извлечен элемент </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="ae09b7d22b483db340d588790d66dda27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09b7d22b483db340d588790d66dda27">&#9670;&nbsp;</a></span>stackPush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stackPush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="header_8h.html#a53155e22eaa05190346890241be3367c">type</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавления элемента в стек </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+    <tr><td class="paramname">[type]value</td><td>Значение добавляемого элемента </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="acd47efcfe6496ccb3b8bf2a58d3f7260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd47efcfe6496ccb3b8bf2a58d3f7260">&#9670;&nbsp;</a></span>stackResize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int stackResize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>stk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>upper</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция изменения емкости стека </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[Stack*]stk</td><td>Указатель на стек </td></tr>
+    <tr><td class="paramname">[int]upper</td><td>1, если требуется увеличить емкость, 0 &ndash; если нужно уменьшить емкость </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 или код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a8da4890815138313c5d17be035a9a4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da4890815138313c5d17be035a9a4da">&#9670;&nbsp;</a></span>switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a188e76edbd48bf23989dd769d2f36b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188e76edbd48bf23989dd769d2f36b33">&#9670;&nbsp;</a></span>while() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8cpp.html#a96c625e0a3d3e919cac1cb359f29ebc0">element_size</a> &gt;=&#160;</td>
+          <td class="paramname"><em>16</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64f0022bc70db27ccc65367797123ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f0022bc70db27ccc65367797123ff3">&#9670;&nbsp;</a></span>while() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a> &gt;=&#160;</td>
+          <td class="paramname"><em>4</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="afb8a18b1a8a5a679a5c4bbb52769b49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8a18b1a8a5a679a5c4bbb52769b49e">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char* data = (const unsigned char*) key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96c625e0a3d3e919cac1cb359f29ebc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c625e0a3d3e919cac1cb359f29ebc0">&#9670;&nbsp;</a></span>element_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void int element_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">char</span>* dest = (<span class="keywordtype">char</span>*) destination</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae29fb3733901031f1a69e5ddafd04c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29fb3733901031f1a69e5ddafd04c6f">&#9670;&nbsp;</a></span>h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8cpp.html#a9717e7bbecb906637e86cef6da3d83c2">return</a> h = <a class="el" href="functions_8cpp.html#ab25cb8b96357984d0b18ca1798489429">seed</a> ^ <a class="el" href="functions_8cpp.html#a77124bd5f7e31e6fffc19f335da0c23f">len</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90e096a39cfc6da042e02d27a346f2d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e096a39cfc6da042e02d27a346f2d3">&#9670;&nbsp;</a></span>k</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int k = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77124bd5f7e31e6fffc19f335da0c23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77124bd5f7e31e6fffc19f335da0c23f">&#9670;&nbsp;</a></span>len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">{</div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m = 0x5BD1E995</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a44deb9fa59c12e3147ffd8d53775eb47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44deb9fa59c12e3147ffd8d53775eb47">&#9670;&nbsp;</a></span>logs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* logs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab1a61aefa4f95e20603bbf888cb2a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1a61aefa4f95e20603bbf888cb2a5f">&#9670;&nbsp;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int r = 24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9717e7bbecb906637e86cef6da3d83c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9717e7bbecb906637e86cef6da3d83c2">&#9670;&nbsp;</a></span>return</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">return</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab25cb8b96357984d0b18ca1798489429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25cb8b96357984d0b18ca1798489429">&#9670;&nbsp;</a></span>seed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int seed = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6be0202d766384de889755c765e80e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be0202d766384de889755c765e80e12">&#9670;&nbsp;</a></span>sourse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sourse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a959c2e4a02db5d5fb4534b2462e825db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959c2e4a02db5d5fb4534b2462e825db">&#9670;&nbsp;</a></span>srs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* srs = (char*) <a class="el" href="functions_8cpp.html#a6be0202d766384de889755c765e80e12">sourse</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

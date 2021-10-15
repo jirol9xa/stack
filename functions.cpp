@@ -1,11 +1,51 @@
 #include "header.h"
 extern FILE* logs;
 
+/*!
+    \brief  Функция изменения емкости стека
+    \param  [Stack*]stk Указатель на стек
+    \param  [int]upper 1, если требуется
+            увеличить емкость, 0 -- если
+            нужно уменьшить емкость
+    \return 0 или код ошибки
+*/
 static int stackResize(Stack* stk, int upper);
-static int memcpy(void* destination, void* sourse, int element_size);
+
+/*!
+    \brief  Функция копирования памяти
+    \param  [void*]destination Место,
+            куда надо записать данные
+    \param  [void*]sourse Место, откуда
+            надо взять данные
+    \param  [int]element_siez размер
+            элемента
+    \return 0 или код ошибки
+*/
+static int MemCpy(void* destination, void* sourse, int element_size);
+
+/*!
+    \brief  Функция подсчета хеша
+    \param  [Stack*]stk Указатель на стек
+    \return 0 или код ошибки
+*/
 static unsigned int hashCalc(Stack* stk);
+
+/*!
+    \brief  Функция посчет хеша по 
+            алгоритму MurmurHash2
+*/
 static unsigned int MurmurHash2(char* key, unsigned int len);
+
+/*!
+    \brief  Функция установки левой или
+            правой канарейки для data
+    \param  [Stack*]stk Указатель на стек
+    \param  [int]is_left 1, если надо 
+            установить левую канарейку,
+            !1 -- если правую
+*/
 static void setCanary(Stack* stk, int is_left);
+
 
 int stackCtor(Stack* stk, int capacity) 
 {   
@@ -84,7 +124,7 @@ int stackPush(Stack* stk, type value)
 
     stk->size ++;
 
-    memcpy((char*) &stk->data[stk->size - 1], &value, sizeof(type));
+    MemCpy((char*) &stk->data[stk->size - 1], &value, sizeof(type));
 
     is_debug_lvl_1(
         if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_PUSH_FAILED;
@@ -169,8 +209,9 @@ static int stackResize(Stack* stk, int upper)
     }
     else {
         is_debug_lvl_1(
-            realloc(stk->data, sizeof(type) * (stk->capacity / 2) + 2 * sizeof(u_int64_t));
+            realloc(LEFT_CANARY(stk), sizeof(type) * (stk->capacity / 2) + 2 * sizeof(u_int64_t));
             setCanary(stk, 0);
+            hashCalc(stk);
         )
 
         #if DEBUG_LVL <= 1
@@ -196,7 +237,7 @@ int stackPop(Stack* stk, type* param)
     )
 
     stk->size--;
-    memcpy(param, &(stk->data[stk->size]), sizeof(type));
+    MemCpy(param, &(stk->data[stk->size]), sizeof(type));
     stk->data[stk->size] = POISON;
 
     while (stk->capacity / 2 - stk->size > 3) {
@@ -217,6 +258,9 @@ int stackPop(Stack* stk, type* param)
 
 is_debug_lvl_0(
     void verifyStack(Stack* stk){
+        if (stk->data == (type*) 0xBEBE) {
+            stk->status |= ERR_STACK_ALREADY_CLEANED;
+        }
         if (stk->status & (ERR_STACK_ALREADY_CLEANED) == 0){
             is_debug_lvl_1(
                 if (stk->hash != hashCalc(stk)) {
@@ -277,7 +321,7 @@ is_debug_lvl_0(
 )
 
 
-static int memcpy(void* destination, void* sourse, int element_size)
+static int MemCpy(void* destination, void* sourse, int element_size)
 {
     #if DEBUG_LVL > 0
         CHECK_PTR(destination)
