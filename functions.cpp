@@ -74,7 +74,9 @@ int stackPush(Stack* stk, type value)
 
     if (stk->size + 1 > stk->capacity) {
         if (stackResize(stk, 1) == ERR_RESIZE_FAILED) {
+            is_debug_lvl_0(
             fprintf(logs, "Error in %s on %d line: not enough memory for stack\n\n\n", __FUNCTION__, __LINE__);
+            )
 
             return ERR_PUSH_FAILED;
         }
@@ -169,7 +171,6 @@ static int stackResize(Stack* stk, int upper)
         is_debug_lvl_1(
             realloc(stk->data, sizeof(type) * (stk->capacity / 2) + 2 * sizeof(u_int64_t));
             setCanary(stk, 0);
-            hashCalc(stk);
         )
 
         #if DEBUG_LVL <= 1
@@ -216,10 +217,6 @@ int stackPop(Stack* stk, type* param)
 
 is_debug_lvl_0(
     void verifyStack(Stack* stk){
-
-        if (stk->data == (type*) 0xBEBE) {
-            stk->status |= ERR_STACK_ALREADY_CLEANED;
-        }
         if (stk->status & (ERR_STACK_ALREADY_CLEANED) == 0){
             is_debug_lvl_1(
                 if (stk->hash != hashCalc(stk)) {
@@ -343,7 +340,7 @@ is_debug_lvl_1(
 static unsigned int MurmurHash2(char* key, unsigned int len) 
 {
     // большими буквами хекс
-    const unsigned int m = 0x5bd1e995;
+    const unsigned int m = 0x5BD1E995;
     const unsigned int seed = 0;
     const int r = 24;
 
@@ -386,46 +383,47 @@ static unsigned int MurmurHash2(char* key, unsigned int len)
     return h;
 }
 
-
-void printError(int Error) 
-{
-    if (Error & 1) 
-        fprintf(logs, "ERR_CALLING_FUNC_FAILED ");
-    if (Error & (1 << 1))
-        fprintf(logs, "ERR_STACK_ALREARY_CREATED ");
-    if (Error & (1 << 2))
-        fprintf(logs, "ERR_EMPTY_ELEM_ISNT_POISONED ");
-    if (Error & (1 << 3))
-        fprintf(logs, "ERR_SIZE_GREATER_CAPACITY ");
-    if (Error & (1 << 4))
-        fprintf(logs, "ERR_POP_EMPTY_STACK ");
-    if (Error & (1 << 5))
-        fprintf(logs, "ERR_RIGHT_CANARY_DAMAGED ");
-    if (Error & (1 << 6))
-        fprintf(logs, "ERR_LEFT_CANARY_DAMAGED ");
-    if (Error & (1 << 7))
-        fprintf(logs, "ERR_WRONG_HASH ");
-    if (Error & (1 << 8))
-        fprintf(logs, "ERR_INVALID_PTR ");
-    if (Error & (1 << 9))
-        fprintf(logs, "ERR_REALLOC_FAILED ");
-    if (Error & (1 << 10))
-        fprintf(logs, "ERR_PUSH_FAILED ");
-    if (Error & (1 << 11))
-        fprintf(logs, "ERR_STACK_ALREADY_CLEANED ");
-    if (Error & (1 << 12))
-        fprintf(logs, "ERR_LEFT_DATACANARY_DAMAGED ");
-    if (Error & (1 << 13))
-        fprintf(logs, "ERR_RIGHT_DATACANARY_DAMAGED ");
-    if (Error & (1 << 14))
-        fprintf(logs, "ERR_RESIZE_FAILED ");
-    if (Error & (1 << 15))
-        fprintf(logs, "ERR_POP_FAILED ");
-    if (Error & (1 << 16))
-        fprintf(logs, "ERR_DUMP_FAILED ");
-    if (Error & (1 << 17))
-        fprintf(logs, "ERR_STACK_BROKEN ");
-}
+is_debug_lvl_0(
+    void printError(int Error) 
+    {
+        if (Error & 1) 
+            fprintf(logs, "ERR_CALLING_FUNC_FAILED ");
+        if (Error & (1 << 1))
+            fprintf(logs, "ERR_STACK_ALREARY_CREATED ");
+        if (Error & (1 << 2))
+            fprintf(logs, "ERR_EMPTY_ELEM_ISNT_POISONED ");
+        if (Error & (1 << 3))
+            fprintf(logs, "ERR_SIZE_GREATER_CAPACITY ");
+        if (Error & (1 << 4))
+            fprintf(logs, "ERR_POP_EMPTY_STACK ");
+        if (Error & (1 << 5))
+            fprintf(logs, "ERR_RIGHT_CANARY_DAMAGED ");
+        if (Error & (1 << 6))
+            fprintf(logs, "ERR_LEFT_CANARY_DAMAGED ");
+        if (Error & (1 << 7))
+            fprintf(logs, "ERR_WRONG_HASH ");
+        if (Error & (1 << 8))
+            fprintf(logs, "ERR_INVALID_PTR ");
+        if (Error & (1 << 9))
+            fprintf(logs, "ERR_REALLOC_FAILED ");
+        if (Error & (1 << 10))
+            fprintf(logs, "ERR_PUSH_FAILED ");
+        if (Error & (1 << 11))
+            fprintf(logs, "ERR_STACK_ALREADY_CLEANED ");
+        if (Error & (1 << 12))
+            fprintf(logs, "ERR_LEFT_DATACANARY_DAMAGED ");
+        if (Error & (1 << 13))
+            fprintf(logs, "ERR_RIGHT_DATACANARY_DAMAGED ");
+        if (Error & (1 << 14))
+            fprintf(logs, "ERR_RESIZE_FAILED ");
+        if (Error & (1 << 15))
+            fprintf(logs, "ERR_POP_FAILED ");
+        if (Error & (1 << 16))
+            fprintf(logs, "ERR_DUMP_FAILED ");
+        if (Error & (1 << 17))
+            fprintf(logs, "ERR_STACK_BROKEN ");
+    }
+)
 
 is_debug_lvl_1(
     static void setCanary(Stack* stk, int is_left)
