@@ -72,10 +72,11 @@ int stackCtor(Stack* stk, int capacity)
         stk->data[i] = POISON;
     }
 
-    is_debug_lvl_1( if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR);
+    is_debug_lvl_1( if (hashCalc(stk) == ERR_INVALID_PTR) return ERR_INVALID_PTR );
 
     is_debug_lvl_0(
         STACK_CREATION_INFO(stk)
+        stk->status = EMPTY_STACK;
         STACK_DUMP(stk)
     )
 
@@ -145,29 +146,26 @@ static int stackResize(Stack* stk, int upper)
                    ASSERT_OK(stk)
     )
 
-    //stk->capacity = stk->capacity * 2 + !stk->capacity;
-
     if (upper) {
         void* temp_ptr = nullptr;
         if (stk->capacity == 0) {
             stk->capacity = 1;
             
-            temp_ptr = realloc(stk->data, sizeof(type));
+            #if DEBUG_LVL < 1
+                temp_ptr = realloc(stk->data, sizeof(type));
+            #endif
             is_debug_lvl_1(temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) + sizeof(u_int64_t) * 2 ));
 
             if (temp_ptr != nullptr) {
                 is_debug_lvl_1(
-                    stk->data = (type*) ((char*)temp_ptr + sizeof(u_int64_t));
-
                     setCanary(stk, 1);
                     setCanary(stk, 0);   
                 )
-
                 for (int i = stk->size; i < stk->capacity; i++) {
                     stk->data[i] = POISON;
                 }
+                is_debug_lvl_0(stk->status &= !EMPTY_STACK);
                 is_debug_lvl_1(hashCalc(stk));
-
                 is_debug_lvl_0(STACK_DUMP(stk));
                 return 0;
             }
@@ -178,8 +176,10 @@ static int stackResize(Stack* stk, int upper)
                 return ERR_RESIZE_FAILED;
             }
         }
-
-        temp_ptr = realloc(stk->data, sizeof(type) * 2 * stk->capacity);
+        
+        #if DEBUG_LVL < 1
+            temp_ptr = realloc(stk->data, sizeof(type) * 2 * stk->capacity);
+        #endif
         is_debug_lvl_1(temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) * 2 * stk->capacity  + sizeof(u_int64_t) * 2));
 
         if (temp_ptr != nullptr) {
@@ -259,9 +259,10 @@ int stackPop(Stack* stk, type* param)
 is_debug_lvl_0(
     void verifyStack(Stack* stk){
         if (stk->data == (type*) 0xBEBE) {
+
             stk->status |= ERR_STACK_ALREADY_CLEANED;
         }
-        if (stk->status & (ERR_STACK_ALREADY_CLEANED) == 0){
+        if (((stk->status & ERR_STACK_ALREADY_CLEANED) == 0) && ((stk->status & EMPTY_STACK) == 0)){
             is_debug_lvl_1(
                 if (stk->hash != hashCalc(stk)) {
                     stk->status |= ERR_WRONG_HASH;
@@ -299,7 +300,7 @@ is_debug_lvl_0(
         fprintf(logs, "Stack <> adress[%p] \"%s\" at %s\n", stk, stack_name, func_name);
         fprintf(logs, "---------------------------------------------------------------------------------\n");
         fprintf(logs, "STATUS = %16s\n" "stack size = %12d\n" "stack capacity = %8d\n" 
-                "data [%p]\n", (stk->status == OK) ? "OK" : "BROKEN", stk->size, stk->capacity, stk->data);
+                "data [%p]\n", (stk->status == OK || stk->status == EMPTY_STACK) ? "OK" : "BROKEN", stk->size, stk->capacity, stk->data);
 
         if (stk->status){
             printError(stk->status);

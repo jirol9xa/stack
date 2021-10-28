@@ -63,7 +63,8 @@ is_debug(code) -----+
             ERR_RESIZE_FAILED              =    1 << 14,
             ERR_POP_FAILED                 =    1 << 15,
             ERR_DUMP_FAILED                =    1 << 16,
-            ERR_STACK_BROKEN               =    1 << 17
+            ERR_STACK_BROKEN               =    1 << 17,
+            EMPTY_STACK                    =    1 << 18
         };
 
     #if (DEBUG_LVL > 0)
@@ -87,7 +88,7 @@ is_debug(code) -----+
         }
 
         #define ASSERT_OK(stack) {                                                                            \
-            if (stack->status) return ERR_STACK_BROKEN;                                                       \
+            if ((stack->status & EMPTY_STACK == 0) && (stack->status & OK != 0)) return ERR_STACK_BROKEN;     \
         }
 
         #define FUNC_REPORT(func, stack) {                                                                    \
