@@ -149,35 +149,6 @@ static int stackResize(Stack* stk, int upper)
 
     if (upper) {
         void* temp_ptr = nullptr;
-        if (stk->capacity == 0) {
-            stk->capacity = 1;
-            
-            temp_ptr = realloc(stk->data, sizeof(type));
-            is_debug_lvl_1(temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) + sizeof(u_int64_t) * 2 ));
-
-            if (temp_ptr != nullptr) {
-                is_debug_lvl_1(
-                    stk->data = (type*) ((char*)temp_ptr + sizeof(u_int64_t));
-
-                    setCanary(stk, 1);
-                    setCanary(stk, 0);   
-                )
-
-                for (int i = stk->size; i < stk->capacity; i++) {
-                    stk->data[i] = POISON;
-                }
-                is_debug_lvl_1(hashCalc(stk));
-
-                is_debug_lvl_0(STACK_DUMP(stk));
-                return 0;
-            }
-            else {
-
-                is_debug_lvl_0(STACK_DUMP(stk));
-                
-                return ERR_RESIZE_FAILED;
-            }
-        }
 
         temp_ptr = realloc(stk->data, sizeof(type) * 2 * stk->capacity);
         is_debug_lvl_1(temp_ptr = realloc(LEFT_CANARY(stk), sizeof(type) * 2 * stk->capacity  + sizeof(u_int64_t) * 2));
@@ -227,9 +198,6 @@ static int stackResize(Stack* stk, int upper)
 
 int stackPop(Stack* stk, type* param)
 {   
-    if (stk->size <= 0) {
-        return ERR_POP_EMPTY_STACK;
-    }
     
     is_debug_lvl_0(
         STACK_DUMP(stk)

@@ -1,857 +1,4649 @@
-Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 78.Adress 0x7ffd33cf0a90 with addrreess of data: 0x56404843b488
+Stack "stk" was created in function "int stackCtor(Stack*, int)" on line 78.Adress 0x7ffcef791820 with addrreess of data: 0x564468c4e488
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackCtor
+Stack <> adress[0x7ffcef791820] "stk" at stackCtor
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =      128
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
-*data[32] = DEAD
-*data[33] = DEAD
-*data[34] = DEAD
-*data[35] = DEAD
-*data[36] = DEAD
-*data[37] = DEAD
-*data[38] = DEAD
-*data[39] = DEAD
-*data[40] = DEAD
-*data[41] = DEAD
-*data[42] = DEAD
-*data[43] = DEAD
-*data[44] = DEAD
-*data[45] = DEAD
-*data[46] = DEAD
-*data[47] = DEAD
-*data[48] = DEAD
-*data[49] = DEAD
-*data[50] = DEAD
-*data[51] = DEAD
-*data[52] = DEAD
-*data[53] = DEAD
-*data[54] = DEAD
-*data[55] = DEAD
-*data[56] = DEAD
-*data[57] = DEAD
-*data[58] = DEAD
-*data[59] = DEAD
-*data[60] = DEAD
-*data[61] = DEAD
-*data[62] = DEAD
-*data[63] = DEAD
-*data[64] = DEAD
-*data[65] = DEAD
-*data[66] = DEAD
-*data[67] = DEAD
-*data[68] = DEAD
-*data[69] = DEAD
-*data[70] = DEAD
-*data[71] = DEAD
-*data[72] = DEAD
-*data[73] = DEAD
-*data[74] = DEAD
-*data[75] = DEAD
-*data[76] = DEAD
-*data[77] = DEAD
-*data[78] = DEAD
-*data[79] = DEAD
-*data[80] = DEAD
-*data[81] = DEAD
-*data[82] = DEAD
-*data[83] = DEAD
-*data[84] = DEAD
-*data[85] = DEAD
-*data[86] = DEAD
-*data[87] = DEAD
-*data[88] = DEAD
-*data[89] = DEAD
-*data[90] = DEAD
-*data[91] = DEAD
-*data[92] = DEAD
-*data[93] = DEAD
-*data[94] = DEAD
-*data[95] = DEAD
-*data[96] = DEAD
-*data[97] = DEAD
-*data[98] = DEAD
-*data[99] = DEAD
-*data[100] = DEAD
-*data[101] = DEAD
-*data[102] = DEAD
-*data[103] = DEAD
-*data[104] = DEAD
-*data[105] = DEAD
-*data[106] = DEAD
-*data[107] = DEAD
-*data[108] = DEAD
-*data[109] = DEAD
-*data[110] = DEAD
-*data[111] = DEAD
-*data[112] = DEAD
-*data[113] = DEAD
-*data[114] = DEAD
-*data[115] = DEAD
-*data[116] = DEAD
-*data[117] = DEAD
-*data[118] = DEAD
-*data[119] = DEAD
-*data[120] = DEAD
-*data[121] = DEAD
-*data[122] = DEAD
-*data[123] = DEAD
-*data[124] = DEAD
-*data[125] = DEAD
-*data[126] = DEAD
-*data[127] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackPush
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =      128
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
-*data[32] = DEAD
-*data[33] = DEAD
-*data[34] = DEAD
-*data[35] = DEAD
-*data[36] = DEAD
-*data[37] = DEAD
-*data[38] = DEAD
-*data[39] = DEAD
-*data[40] = DEAD
-*data[41] = DEAD
-*data[42] = DEAD
-*data[43] = DEAD
-*data[44] = DEAD
-*data[45] = DEAD
-*data[46] = DEAD
-*data[47] = DEAD
-*data[48] = DEAD
-*data[49] = DEAD
-*data[50] = DEAD
-*data[51] = DEAD
-*data[52] = DEAD
-*data[53] = DEAD
-*data[54] = DEAD
-*data[55] = DEAD
-*data[56] = DEAD
-*data[57] = DEAD
-*data[58] = DEAD
-*data[59] = DEAD
-*data[60] = DEAD
-*data[61] = DEAD
-*data[62] = DEAD
-*data[63] = DEAD
-*data[64] = DEAD
-*data[65] = DEAD
-*data[66] = DEAD
-*data[67] = DEAD
-*data[68] = DEAD
-*data[69] = DEAD
-*data[70] = DEAD
-*data[71] = DEAD
-*data[72] = DEAD
-*data[73] = DEAD
-*data[74] = DEAD
-*data[75] = DEAD
-*data[76] = DEAD
-*data[77] = DEAD
-*data[78] = DEAD
-*data[79] = DEAD
-*data[80] = DEAD
-*data[81] = DEAD
-*data[82] = DEAD
-*data[83] = DEAD
-*data[84] = DEAD
-*data[85] = DEAD
-*data[86] = DEAD
-*data[87] = DEAD
-*data[88] = DEAD
-*data[89] = DEAD
-*data[90] = DEAD
-*data[91] = DEAD
-*data[92] = DEAD
-*data[93] = DEAD
-*data[94] = DEAD
-*data[95] = DEAD
-*data[96] = DEAD
-*data[97] = DEAD
-*data[98] = DEAD
-*data[99] = DEAD
-*data[100] = DEAD
-*data[101] = DEAD
-*data[102] = DEAD
-*data[103] = DEAD
-*data[104] = DEAD
-*data[105] = DEAD
-*data[106] = DEAD
-*data[107] = DEAD
-*data[108] = DEAD
-*data[109] = DEAD
-*data[110] = DEAD
-*data[111] = DEAD
-*data[112] = DEAD
-*data[113] = DEAD
-*data[114] = DEAD
-*data[115] = DEAD
-*data[116] = DEAD
-*data[117] = DEAD
-*data[118] = DEAD
-*data[119] = DEAD
-*data[120] = DEAD
-*data[121] = DEAD
-*data[122] = DEAD
-*data[123] = DEAD
-*data[124] = DEAD
-*data[125] = DEAD
-*data[126] = DEAD
-*data[127] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackPush
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
-stack size =            1
-stack capacity =      128
-data [0x56404843b488]
-*data[0] = 10
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
-*data[32] = DEAD
-*data[33] = DEAD
-*data[34] = DEAD
-*data[35] = DEAD
-*data[36] = DEAD
-*data[37] = DEAD
-*data[38] = DEAD
-*data[39] = DEAD
-*data[40] = DEAD
-*data[41] = DEAD
-*data[42] = DEAD
-*data[43] = DEAD
-*data[44] = DEAD
-*data[45] = DEAD
-*data[46] = DEAD
-*data[47] = DEAD
-*data[48] = DEAD
-*data[49] = DEAD
-*data[50] = DEAD
-*data[51] = DEAD
-*data[52] = DEAD
-*data[53] = DEAD
-*data[54] = DEAD
-*data[55] = DEAD
-*data[56] = DEAD
-*data[57] = DEAD
-*data[58] = DEAD
-*data[59] = DEAD
-*data[60] = DEAD
-*data[61] = DEAD
-*data[62] = DEAD
-*data[63] = DEAD
-*data[64] = DEAD
-*data[65] = DEAD
-*data[66] = DEAD
-*data[67] = DEAD
-*data[68] = DEAD
-*data[69] = DEAD
-*data[70] = DEAD
-*data[71] = DEAD
-*data[72] = DEAD
-*data[73] = DEAD
-*data[74] = DEAD
-*data[75] = DEAD
-*data[76] = DEAD
-*data[77] = DEAD
-*data[78] = DEAD
-*data[79] = DEAD
-*data[80] = DEAD
-*data[81] = DEAD
-*data[82] = DEAD
-*data[83] = DEAD
-*data[84] = DEAD
-*data[85] = DEAD
-*data[86] = DEAD
-*data[87] = DEAD
-*data[88] = DEAD
-*data[89] = DEAD
-*data[90] = DEAD
-*data[91] = DEAD
-*data[92] = DEAD
-*data[93] = DEAD
-*data[94] = DEAD
-*data[95] = DEAD
-*data[96] = DEAD
-*data[97] = DEAD
-*data[98] = DEAD
-*data[99] = DEAD
-*data[100] = DEAD
-*data[101] = DEAD
-*data[102] = DEAD
-*data[103] = DEAD
-*data[104] = DEAD
-*data[105] = DEAD
-*data[106] = DEAD
-*data[107] = DEAD
-*data[108] = DEAD
-*data[109] = DEAD
-*data[110] = DEAD
-*data[111] = DEAD
-*data[112] = DEAD
-*data[113] = DEAD
-*data[114] = DEAD
-*data[115] = DEAD
-*data[116] = DEAD
-*data[117] = DEAD
-*data[118] = DEAD
-*data[119] = DEAD
-*data[120] = DEAD
-*data[121] = DEAD
-*data[122] = DEAD
-*data[123] = DEAD
-*data[124] = DEAD
-*data[125] = DEAD
-*data[126] = DEAD
-*data[127] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackPop
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
-stack size =            1
-stack capacity =      128
-data [0x56404843b488]
-*data[0] = 10
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
-*data[32] = DEAD
-*data[33] = DEAD
-*data[34] = DEAD
-*data[35] = DEAD
-*data[36] = DEAD
-*data[37] = DEAD
-*data[38] = DEAD
-*data[39] = DEAD
-*data[40] = DEAD
-*data[41] = DEAD
-*data[42] = DEAD
-*data[43] = DEAD
-*data[44] = DEAD
-*data[45] = DEAD
-*data[46] = DEAD
-*data[47] = DEAD
-*data[48] = DEAD
-*data[49] = DEAD
-*data[50] = DEAD
-*data[51] = DEAD
-*data[52] = DEAD
-*data[53] = DEAD
-*data[54] = DEAD
-*data[55] = DEAD
-*data[56] = DEAD
-*data[57] = DEAD
-*data[58] = DEAD
-*data[59] = DEAD
-*data[60] = DEAD
-*data[61] = DEAD
-*data[62] = DEAD
-*data[63] = DEAD
-*data[64] = DEAD
-*data[65] = DEAD
-*data[66] = DEAD
-*data[67] = DEAD
-*data[68] = DEAD
-*data[69] = DEAD
-*data[70] = DEAD
-*data[71] = DEAD
-*data[72] = DEAD
-*data[73] = DEAD
-*data[74] = DEAD
-*data[75] = DEAD
-*data[76] = DEAD
-*data[77] = DEAD
-*data[78] = DEAD
-*data[79] = DEAD
-*data[80] = DEAD
-*data[81] = DEAD
-*data[82] = DEAD
-*data[83] = DEAD
-*data[84] = DEAD
-*data[85] = DEAD
-*data[86] = DEAD
-*data[87] = DEAD
-*data[88] = DEAD
-*data[89] = DEAD
-*data[90] = DEAD
-*data[91] = DEAD
-*data[92] = DEAD
-*data[93] = DEAD
-*data[94] = DEAD
-*data[95] = DEAD
-*data[96] = DEAD
-*data[97] = DEAD
-*data[98] = DEAD
-*data[99] = DEAD
-*data[100] = DEAD
-*data[101] = DEAD
-*data[102] = DEAD
-*data[103] = DEAD
-*data[104] = DEAD
-*data[105] = DEAD
-*data[106] = DEAD
-*data[107] = DEAD
-*data[108] = DEAD
-*data[109] = DEAD
-*data[110] = DEAD
-*data[111] = DEAD
-*data[112] = DEAD
-*data[113] = DEAD
-*data[114] = DEAD
-*data[115] = DEAD
-*data[116] = DEAD
-*data[117] = DEAD
-*data[118] = DEAD
-*data[119] = DEAD
-*data[120] = DEAD
-*data[121] = DEAD
-*data[122] = DEAD
-*data[123] = DEAD
-*data[124] = DEAD
-*data[125] = DEAD
-*data[126] = DEAD
-*data[127] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackResize
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =      128
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
-*data[32] = DEAD
-*data[33] = DEAD
-*data[34] = DEAD
-*data[35] = DEAD
-*data[36] = DEAD
-*data[37] = DEAD
-*data[38] = DEAD
-*data[39] = DEAD
-*data[40] = DEAD
-*data[41] = DEAD
-*data[42] = DEAD
-*data[43] = DEAD
-*data[44] = DEAD
-*data[45] = DEAD
-*data[46] = DEAD
-*data[47] = DEAD
-*data[48] = DEAD
-*data[49] = DEAD
-*data[50] = DEAD
-*data[51] = DEAD
-*data[52] = DEAD
-*data[53] = DEAD
-*data[54] = DEAD
-*data[55] = DEAD
-*data[56] = DEAD
-*data[57] = DEAD
-*data[58] = DEAD
-*data[59] = DEAD
-*data[60] = DEAD
-*data[61] = DEAD
-*data[62] = DEAD
-*data[63] = DEAD
-*data[64] = DEAD
-*data[65] = DEAD
-*data[66] = DEAD
-*data[67] = DEAD
-*data[68] = DEAD
-*data[69] = DEAD
-*data[70] = DEAD
-*data[71] = DEAD
-*data[72] = DEAD
-*data[73] = DEAD
-*data[74] = DEAD
-*data[75] = DEAD
-*data[76] = DEAD
-*data[77] = DEAD
-*data[78] = DEAD
-*data[79] = DEAD
-*data[80] = DEAD
-*data[81] = DEAD
-*data[82] = DEAD
-*data[83] = DEAD
-*data[84] = DEAD
-*data[85] = DEAD
-*data[86] = DEAD
-*data[87] = DEAD
-*data[88] = DEAD
-*data[89] = DEAD
-*data[90] = DEAD
-*data[91] = DEAD
-*data[92] = DEAD
-*data[93] = DEAD
-*data[94] = DEAD
-*data[95] = DEAD
-*data[96] = DEAD
-*data[97] = DEAD
-*data[98] = DEAD
-*data[99] = DEAD
-*data[100] = DEAD
-*data[101] = DEAD
-*data[102] = DEAD
-*data[103] = DEAD
-*data[104] = DEAD
-*data[105] = DEAD
-*data[106] = DEAD
-*data[107] = DEAD
-*data[108] = DEAD
-*data[109] = DEAD
-*data[110] = DEAD
-*data[111] = DEAD
-*data[112] = DEAD
-*data[113] = DEAD
-*data[114] = DEAD
-*data[115] = DEAD
-*data[116] = DEAD
-*data[117] = DEAD
-*data[118] = DEAD
-*data[119] = DEAD
-*data[120] = DEAD
-*data[121] = DEAD
-*data[122] = DEAD
-*data[123] = DEAD
-*data[124] = DEAD
-*data[125] = DEAD
-*data[126] = DEAD
-*data[127] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackResize
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =       64
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
-*data[32] = DEAD
-*data[33] = DEAD
-*data[34] = DEAD
-*data[35] = DEAD
-*data[36] = DEAD
-*data[37] = DEAD
-*data[38] = DEAD
-*data[39] = DEAD
-*data[40] = DEAD
-*data[41] = DEAD
-*data[42] = DEAD
-*data[43] = DEAD
-*data[44] = DEAD
-*data[45] = DEAD
-*data[46] = DEAD
-*data[47] = DEAD
-*data[48] = DEAD
-*data[49] = DEAD
-*data[50] = DEAD
-*data[51] = DEAD
-*data[52] = DEAD
-*data[53] = DEAD
-*data[54] = DEAD
-*data[55] = DEAD
-*data[56] = DEAD
-*data[57] = DEAD
-*data[58] = DEAD
-*data[59] = DEAD
-*data[60] = DEAD
-*data[61] = DEAD
-*data[62] = DEAD
-*data[63] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackResize
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =       32
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
-*data[16] = DEAD
-*data[17] = DEAD
-*data[18] = DEAD
-*data[19] = DEAD
-*data[20] = DEAD
-*data[21] = DEAD
-*data[22] = DEAD
-*data[23] = DEAD
-*data[24] = DEAD
-*data[25] = DEAD
-*data[26] = DEAD
-*data[27] = DEAD
-*data[28] = DEAD
-*data[29] = DEAD
-*data[30] = DEAD
-*data[31] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackResize
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =       16
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
-*data[8] = DEAD
-*data[9] = DEAD
-*data[10] = DEAD
-*data[11] = DEAD
-*data[12] = DEAD
-*data[13] = DEAD
-*data[14] = DEAD
-*data[15] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackResize
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =        8
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
-*data[4] = DEAD
-*data[5] = DEAD
-*data[6] = DEAD
-*data[7] = DEAD
 ---------------------------------------------------------------------------------
 
 
-Stack <> adress[0x7ffd33cf0a90] "stk" at stackPop
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
 ---------------------------------------------------------------------------------
 STATUS =               OK
 stack size =            0
-stack capacity =        4
-data [0x56404843b488]
+stack capacity =        2
+data [0x564468c4e488]
 *data[0] = DEAD
 *data[1] = DEAD
-*data[2] = DEAD
-*data[3] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPush
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =            0
+stack capacity =        2
+data [0x564468c4e488]
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackPop
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
+---------------------------------------------------------------------------------
+
+
+Stack <> adress[0x7ffcef791820] "stk" at stackDtor
+---------------------------------------------------------------------------------
+STATUS =               OK
+stack size =           -1
+stack capacity =        2
+data [0x564468c4e488]
+*data[-1] = DEAD
+*data[0] = DEAD
+*data[1] = DEAD
 ---------------------------------------------------------------------------------
 
 
